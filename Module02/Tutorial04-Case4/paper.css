@@ -1,0 +1,138 @@
+
+/* =============================================================   
+
+	 Book:         New Perspectives on HTML and CSS
+	 Project:      Tutorial 4 : Case Problem 4
+``````````````````````````````````````````````````````````````````
+	 File:           Park City Gazette Style Sheet
+``````````````````````````````````````````````````````````````````
+	 Author:       Roger Corley
+	 Date:         May 21, 2015
+``````````````````````````````````````````````````````````````````
+	 Filename:
+			paper.css
+			
+	 Supporting files:
+			
+
+==================================================================  */
+
+html {
+	font-size:  16px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+body {}
+
+h1 {
+	font-size: 2.769em;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 1.769em;
+	font-weight: 400;
+}
+
+p {
+
+}
+
+header {}
+
+nav {
+	width: 100%;
+	background-color: #000;
+}
+
+nav img {
+	width: 100%;
+}
+nav ul {
+	font-size: .75 em;
+	background: #000; 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul li:hover {
+	background: #4b545f;
+}
+
+nav ul li:hover a {
+	color: #fff;
+}
+  
+nav ul li a {
+	display: block; padding: 10px 40px;
+	color: #FFF; text-decoration: none;
+}
+
+nav ul ul {
+	display: none;
+	background: #5f6975; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #fff;
+} 
+
+nav ul ul li a:hover {
+	background: #4b545f;
+}
+
+#hero section {
+/*	height="140" width="600"   */
+	width: 100%;
+	height: auto;
+}
+
+#hero img {
+	width: 100%;
+}
+
+section {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+article {
+	padding: 0;
+	margin: 0;
+}
+
+article h1 {
+	padding: 0;
+	margin: 0;
+}
+
+aside {
+
+}

@@ -1,0 +1,54 @@
+/*---------------------------------------------------------------
+
+	New Perspectives on HTML : Tutorial 3 
+	Case Problem 1 : ICI Text and Color Styles
+	.........................................................
+
+	Author:    Roger Corley
+	Date:       May 21, 2015
+	.........................................................
+
+	Filename:		c_styles.css
+	Supporting Files:	none
+
+-----------------------------------------------------------------  */
+
+
+body {
+	background-color: #000;
+	color: #FFF;
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+	color: #FF0;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 28px;
+	letter-spacing: 20px;
+/*	letter-spacing: 1.25em ;   */
+	text-align: center;
+}
+
+article h2 {
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 5px;
+/*	letter-spacing: 0.3125em;   */
+}
+
+article p {
+	text-align: justify;
+}
+
+.keyword  {
+	color: #FF0;
+	font-weight: normal;
+}
+
+footer p {
+	text-align: center;
+}
+
+.locks  {
+	border-width:  0; 
+}
