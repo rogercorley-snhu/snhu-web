@@ -23,47 +23,57 @@
 <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 <link rel="stylesheet" href="paper.css">
 </head>
+
 <body>
-	<header>
-	<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">News</a>
-					<ul>
-						<li><a href="">Local</a></li>
-						<li><a href="">State</a></li>
-						<li><a href="">National</a></li>
-						<li><a href="">International</a></li>
-						<li><a href="">Sports</a></li>
-						<li><a href="">Weather</a> </li>
-					</ul>
-				</li>
-				<li><a href="#">Classifieds</a>
-					<ul>
-						<li><a href="">For Sale</a></li>
-						<li><a href="">Wanted</a></li>
-						<li><a href="">Employement</a></li>
-						<li><a href="">Real Estate</a></li>
-						<li><a href="">Personal</a></li>
-					</ul>
-				</li>
-				<li ><a href="#">Tourism</a>
-					<ul>
-						<li><a href="">Attractions</a></li>
-						<li><a href="">Events</a></li>
-						<li><a href="">Parks</a></li>
-						<li><a href="">Camping</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Subscriptions</a></li>
-				<li><a href="#">Contact Us</a> </li>
-			</ul>
+	<div id = "wrapper">
+
+	<div id = "nav-wrapper">
+
+		<nav id = "logo">
+			The Park City Gazette
 		</nav>
-		<section id="hero">
-			<img src="pcglogo.jpg" alt="Park City Gazette">
-		</section>
+
+		<nav id="navbar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">News</a>
+						<ul>
+							<li><a href="">Local</a></li>
+							<li><a href="">State</a></li>
+							<li><a href="">National</a></li>
+							<li><a href="">International</a></li>
+							<li><a href="">Sports</a></li>
+							<li><a href="">Weather</a> </li>
+						</ul>
+					</li>
+					<li><a href="#">Classifieds</a>
+						<ul>
+							<li><a href="">For Sale</a></li>
+							<li><a href="">Wanted</a></li>
+							<li><a href="">Employement</a></li>
+							<li><a href="">Real Estate</a></li>
+							<li><a href="">Personal</a></li>
+						</ul>
+					</li>
+					<li ><a href="#">Tourism</a>
+						<ul>
+							<li><a href="">Attractions</a></li>
+							<li><a href="">Events</a></li>
+							<li><a href="">Parks</a></li>
+							<li><a href="">Camping</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Subscriptions</a></li>
+					<li><a href="#">Contact Us</a> </li>
+				</ul>
+			</nav>
+		</div> <!-- End #/nav-wrapper -->
 		
-	</header>
+		<div id="hero">
+			<h1>The Park City Gazette</h1>
+		</div>
+
+	<div id="articles" style="float: left; width: 60%;">
 	<section>
 		<article>
 			<h1>Local Woman Wins Marathon </h1>
@@ -93,7 +103,9 @@
 			<p>DNR spokesman Steve Tasker asks residents to call the DNR report line at 555-6981 if they believe they have seen a cougar or any large predatory animal. Two fatalities have already occurred in the west this year from cougar attacks.</p>
 		</article>
 	</section>
-
+	</div>
+	
+	<div id="aside" style="float: right; width: 20%;">
 	<aside>
 		<h2>If You Encounter a Cougar </h2>
 
@@ -106,7 +118,9 @@
 			<li>In case of an attack, stay on your feet and fight back aggressively. </li>
 		</ul>
 	</aside>
+	</div>
 	<footer></footer>
+	</div> <!-- /#wrapper
 </body>
 
 </html>

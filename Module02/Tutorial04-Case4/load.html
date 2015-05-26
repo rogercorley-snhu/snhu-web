@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<html lang="en">
+
+<head>
+
+<!--  Page Info
+====================================================== -->
+<meta charset="utf-8">
+<title>The Park City Gazette</title>
+
+<!--  CSS Links
+====================================================== -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-built.css">
+<link rel="stylesheet" href="nav.css">
+
+
+<!--  jQuery Links
+====================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+<!--  Page Navigation
+====================================================== -->
+
+<nav>
+	<div class="l-container">
+			<div class="l-right">
+				<ul class="l-row">
+
+					<li id="home" class="nav-item l-left">
+						<a href="#">Home</a>
+					</li>
+
+					<li class="nav-item l-left">
+						<a id="news" href="#">News</a>
+					</li>
+
+					<li id="classifieds" class="nav-item l-left">
+						<a href="#">Classifieds</a>
+					</li>
+
+					<li id="tourism" class="nav-item l-left">
+						<a href="#">Tourism</a>
+					</li>
+
+					<li id="subscriptions" class="nav-item l-left">
+						<a href="#">Subscriptions</a>
+					</li>
+
+					<li id="contact" class="nav-item l-left">
+						<a href="#">Contact Us</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="l-container news-hidden">
+		<div class="l-right">
+		<ul class="l-row">
+			<li "nav-item l-left">
+				<a class="nav-item l-left" href="#">Local</a>
+			</li>
+
+			<li "nav-item l-left">
+				<a class="nav-item l-left" href="#">State</a>
+			</li>
+
+			<li "nav-item l-left">
+				<a class="nav-item l-left" href="#">National</a>
+			</li>
+
+			<li "nav-item l-left">
+				<a class="nav-item l-left" href="#">International</a>
+			</li>
+
+			<li "nav-item l-left">
+				<a class="nav-item l-left" href="#">Sports</a>
+			</li>
+
+			<li "nav-item l-left">
+				<a class="nav-item l-left" href="#">Weather</a>
+			</li>
+
+		</ul>
+	</div>
+	</div>
+</nav>
+
+
+<div class="page-header l-container l-padding-tb-45">
+
+	<div class="page-title">
+		<span>THE</span>
+		<span class="author-name bold">PARK CITY</span>
+		<span>GAZETTE</span>
+	</div>
+
+	<div class="page-description">
+		A breif description of Park City news
+	</div>
+
+	<div class="l-margin-top-30">
+		
+	</div>
+</div>
+
+<div class="l-container l-row">
+	
+	<div class="l-main l-left">
+		<div class="posts-list">
+			<div class="post l-row l-padding-tb-60">
+				<a href="#">
+					<div class="l-left post-img" style="background-image:url('blake.jpg')"></div>
+					<div class="l-left post-body">
+						<div class="post-title">
+							Local Woman Wins Marathon
+						</div>
+						<div class="post-date l-margin-bottom-10">May 22, 2015</div>
+						<div class="post-description">
+							Park City native Laura Blake won the 27th Front Range Marathon over an elite field of the best long-distance runners in the country. Laura's time...
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="post l-row l-padding-tb-60">
+				<a href="#">
+					<div class="l-left post-img" style="background-image: url('img-california-hwy-6.jpg')"></div>
+					<div class="l-left post-body">
+						<div class="post-title">
+							Highway 6 Reopens
+						</div>
+						<div class="post-date l-margin-bottom-10">May 21, 2015</div>
+						<div class="post-description">
+							Highway 6 will reopen this Friday, May 3rd, after a final safety inspection. A late blizzard delayed road crews, marking this as one of the latest...
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="post l-row l-padding-tb-60">
+				<a href="#">
+					<div class="l-left post-img" style="background-image: url('cougar.jpg')"></div>
+					<div class="l-left post-body">
+						<div class="post-title">
+							Cougar Sightings Increase
+						</div>
+						<div class="post-date l-margin-bottom-10">May 21, 2015</div>
+						<div class="post-description">
+							Cougar sightings have increased 40% in the Park City area according to a report released yesterday by the state DNR. In the last month alone, there were...
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="l-container l-margin-top-60 l-padding-tb-60">Roger Corley | Copyright &copy; 2015</footer>
+
+
+
+</body>
+<script>
+	$("#news").hover(function(){
+	    $('.news-hidden').show();
+	},function(){
+	    $('.news-hidden').hide();
+	});
+</script>
+</html>
