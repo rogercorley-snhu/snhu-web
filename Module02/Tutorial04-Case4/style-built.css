@@ -498,19 +498,20 @@ nav .nav-item {
 }
 
 
-.news-hidden  {
+nav div #news-hidden, #classified-hidden, #tourism-hidden {
     text-align: center;
     height: 50px;
     line-height: 50px;
+    padding: 5px;
+    margin: 5px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
     font-family: 'Source Sans Pro', sans-serif;
     left: 0px;
-    top: 60px;
-    background-image: url('mochaGrunge_@2X.png');
-    display: none;
-    position: fixed;
+    top: 50px;
+    display: inline-block;
+    position: absolute;
 }
 
 ol, ul {

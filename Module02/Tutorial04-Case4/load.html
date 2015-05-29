@@ -11,9 +11,9 @@
 
 <!--  CSS Links
 ====================================================== -->
-<link rel="stylesheet" href="style.css">
+
+
 <link rel="stylesheet" href="style-built.css">
-<link rel="stylesheet" href="nav.css">
 
 
 <!--  jQuery Links
@@ -33,66 +33,52 @@
 			<div class="l-right">
 				<ul class="l-row">
 
-					<li id="home" class="nav-item l-left">
-						<a href="#">Home</a>
-					</li>
-
-					<li class="nav-item l-left">
-						<a id="news" href="#">News</a>
-					</li>
-
-					<li id="classifieds" class="nav-item l-left">
-						<a href="#">Classifieds</a>
-					</li>
-
-					<li id="tourism" class="nav-item l-left">
-						<a href="#">Tourism</a>
-					</li>
-
-					<li id="subscriptions" class="nav-item l-left">
-						<a href="#">Subscriptions</a>
-					</li>
-
-					<li id="contact" class="nav-item l-left">
-						<a href="#">Contact Us</a>
-					</li>
-
+					<li id="home" class="nav-item l-left">Home<a href="#"></a></li>
+					<li id="news" class="nav-item l-left">News<a id="n-toggle" href="#" style="padding: 0 0 0 5px;">&#9660;</a></li>
+					<li id="classifieds" class="nav-item l-left">Classifieds<a id="c-toggle" href="#" style="padding: 0 0 0 5px;">&#9660;</a></li>
+					<li id="tourism" class="nav-item l-left">Tourism<a id="t-toggle" href="#" style="padding: 0 0 0 5px;">&#9660;</a></li>
+					<li id="subscriptions" class="nav-item l-left"><a href="#">Subscriptions</a></li>
+					<li id="contact" class="nav-item l-left"><a href="#">Contact Us</a></li>
 				</ul>
 			</div>
-
-		</div>
 	</div>
 	
-	<div class="l-container news-hidden">
+	<div id="news-hidden" class="l-container hidden">
+		<div class="l-right">  
+			<ul class="l-row">
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">Local | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">State | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">National | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">International | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">Sports | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">Weather</a></li>
+			</ul>
+		</div>
+	</div>	
+
+	<div id="classified-hidden" class="l-container">
 		<div class="l-right">
-		<ul class="l-row">
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">Local</a>
-			</li>
+			<ul class="l-row">
+				<li><a class="nav-item l-left" href="">For Sale | </a></li>
+				<li><a class="nav-item l-left" href="">Wanted | </a></li>
+				<li><a class="nav-item l-left" href="">Employement | </a></li>
+				<li><a class="nav-item l-left" href="">Real Estate | </a></li>
+				<li><a class="nav-item l-left" href="">Personal</a></li>
+			</ul>
+		</div>
+	</div>	
 
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">State</a>
-			</li>
-
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">National</a>
-			</li>
-
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">International</a>
-			</li>
-
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">Sports</a>
-			</li>
-
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">Weather</a>
-			</li>
-
-		</ul>
+	<div id="tourism-hidden" class="l-container">
+		<div class="l-right">
+			<ul class="l-row">
+				<li><a href="">Attractions | </a></li>
+				<li><a href="">Events | </a></li>
+				<li><a href="">Parks | </a></li>
+				<li><a href="">Camping</a></li>
+			</ul>
+		</div>
 	</div>
-	</div>
+
 </nav>
 
 
@@ -170,11 +156,53 @@
 
 
 </body>
-<script>
-	$("#news").hover(function(){
-	    $('.news-hidden').show();
-	},function(){
-	    $('.news-hidden').hide();
+
+<script type="text/javascript">
+
+	$(document).ready() { 
+
+		$("#n-toggle").click(function() {
+    		$(this).toggleText("&#9660;", "&#9650;");
+    		$("div#news-hidden").toggle();
+		});
+
+
 	});
+
 </script>
+
+<!--
+<script type="text/javascript">
+
+
+
+	$('#news-toggle').toggle(function() {
+		$('#plus').text("&#9650;"); 
+		$('#news-hidden').show();
+	},function(){
+		$('#plus').text("&#9660;");
+		$('#news-hidden').hide();
+	});
+
+
+	$('#classifieds-toggle').toggle(function(){
+		$('#plus').text("&#9650;"); 
+		$('#classifieds-hidden').show();
+	},function(){
+		$('#plus').text("&#9660;");
+		$('#classifieds-hidden').hide();
+	});
+
+
+	$('#tourism-toggle').toggle(function(){
+		$('#plus').text("&#9650;"); 
+		$('#tourism-hidden').show();
+	},function(){
+		$('#plus').text("&#9660;");
+		$('#tourism-hidden').hide();
+	});
+
+</script> 
+-->
+
 </html>
