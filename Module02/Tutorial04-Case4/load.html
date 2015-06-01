@@ -11,9 +11,9 @@
 
 <!--  CSS Links
 ====================================================== -->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="style-built.css">
-<link rel="stylesheet" href="nav.css">
+
+<link rel="stylesheet" href="style-built.css">	
+
 
 
 <!--  jQuery Links
@@ -30,71 +30,56 @@
 
 <nav>
 	<div class="l-container">
-			<div class="l-right">
-				<ul class="l-row">
-
-					<li id="home" class="nav-item l-left">
-						<a href="#">Home</a>
-					</li>
-
-					<li class="nav-item l-left">
-						<a id="news" href="#">News</a>
-					</li>
-
-					<li id="classifieds" class="nav-item l-left">
-						<a href="#">Classifieds</a>
-					</li>
-
-					<li id="tourism" class="nav-item l-left">
-						<a href="#">Tourism</a>
-					</li>
-
-					<li id="subscriptions" class="nav-item l-left">
-						<a href="#">Subscriptions</a>
-					</li>
-
-					<li id="contact" class="nav-item l-left">
-						<a href="#">Contact Us</a>
-					</li>
-
-				</ul>
-			</div>
-
-		</div>
-	</div>
-	
-	<div class="l-container news-hidden">
 		<div class="l-right">
-		<ul class="l-row">
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">Local</a>
-			</li>
+			<ul class="l-row">
 
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">State</a>
-			</li>
+				<li id="home" class="nav-item l-left"><a href="#">Home</a></li>
+				<li id="news" class="nav-item l-left "><a class="toggle" href="#">News</a></li>
+				<li id="classifieds" class="nav-item l-left"><a href="#" >Classifieds</a></li>
+				<li id="tourism" class="nav-item l-left"><a href="#">Tourism</a></li>
+				<li id="subscriptions" class="nav-item l-left"><a href="#">Subscriptions</a></li>
+				<li id="contact" class="nav-item l-left"><a href="#">Contact Us</a></li>
+			</ul>
+		</div> <!-- /.l-right -->
+	</div>  <!-- /.l-container  -->
 
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">National</a>
-			</li>
+	<div  class="l-container">
+		<div class="l-right">
+			<ul  id="news-hide" class="l-row">
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Local</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">State</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">National</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">International</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Sports</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Weather</a></li>
+			</ul>
+		</div>  <!-- /.l-right -->
+	</div>  <!-- /.l-container -->
 
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">International</a>
-			</li>
+	<div id="classifieds-hide" class="l-container">
+		<div class="l-right">
+			<ul class="l-row">
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">For Sale</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Wanted</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Employement</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Real Estate</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Personal</a></li>
+			</ul>
+		</div>  <!-- /.l-right -->
+	</div>  <!-- /.l-container -->
 
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">Sports</a>
-			</li>
+	<div class="l-container">
+		<div class="l-right">
+			<ul id="tourism-hide" class="l-row">
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Attractions</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Events</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Parks</a></li>
+				<li "nav-item l-left"><a class="nav-item l-left" href="#">Camping</a></li>
+			</ul>
+		</div>  <!-- /.l-right -->
+	</div>  <!-- /.l-container -->
 
-			<li "nav-item l-left">
-				<a class="nav-item l-left" href="#">Weather</a>
-			</li>
-
-		</ul>
-	</div>
-	</div>
 </nav>
-
 
 <div class="page-header l-container l-padding-tb-45">
 
@@ -170,11 +155,24 @@
 
 
 </body>
-<script>
-	$("#news").hover(function(){
-	    $('.news-hidden').show();
-	},function(){
-	    $('.news-hidden').hide();
-	});
+<script type="text/javascript">
+$(document).ready 
+(
+	function() 
+	{ 
+		$(".toggle").mouseover 
+		( 	function() 
+			{	$("#news-hidden").show(); 		} );
+				
+		$("#news-hidden").mouseover 
+		( 	function() 
+			{ 	$("#news-hidden").show(); 		} );
+
+		$("#news-hidden").mouseout 
+		( 	function() 
+			{ 	$("#news-hidden").hide();  		} );
+	}
+);
+
 </script>
 </html>

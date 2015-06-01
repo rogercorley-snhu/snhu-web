@@ -1,0 +1,442 @@
+html {
+
+}
+
+body {
+	color: #444;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 16px;
+	width:  100%;
+	min-width: 1024px;
+	margin: 0;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 300
+}
+
+h2 {
+	font-size: 28px;
+	margin-top: 60px
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+a {
+	color: #000
+}
+
+a:hover {
+	color: #F5CC36 !important
+}
+
+.selected {
+  color: #F5CC36 !important
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.italic {
+	font-style: italic
+}
+
+.p-fixed {
+	position: fixed;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.p-absolute {
+	position: absolute;
+}
+
+.p-left {
+	float: left;
+}
+
+.p-right {
+	float: right;
+}
+
+.clear-fix {
+	clear: both
+}
+
+.p-padding-tb-60 {
+	padding-top: 60px;
+	padding-bottom: 60px
+}
+
+.wrapper {
+	overflow-x: hidden;
+	position: relative;
+	left:0;
+	top: 35px;
+	width: auto;
+	margin: 0 auto;
+}
+
+.wrapper-open {
+	left: 231px;
+}
+
+.wrapper-open .wrapper-side {
+	left: 0;
+}
+
+.wrapper-side,
+.wrapper {
+	-webkit-transition: left 200ms ease;
+	-moz-transition: left 200ms ease;
+	transition: left 200ms ease;
+}
+
+.wrapper-side {
+	background-color: #333;
+	border-right: 1px solid #000;
+	color: #FFF;
+	position: fixed;
+	top: 30px;
+	left: -231px;
+	width: 210px;
+	height: 100%;
+	padding: 10px;
+}
+
+.wrapper-side ul {
+	padding-left: 25px;
+}
+
+.wrapper-side ul li {
+	list-style-type: none;
+	padding: 2px;
+}
+
+.wrapper-side a {
+	color: #FFF;
+}
+
+.p-container {
+	width: 100%;
+	margin: auto;
+}
+
+.p-container p.main {
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+#main {
+	width: 100%
+}
+
+.p-row {
+	overflow: hidden;
+}
+
+.header {
+	text-align: center;
+	padding: 40px 0 0;
+}
+
+#p-header {
+	position: fixed;
+	top: 30px;
+	background-color: #FFF;
+	margin-top: 0;
+	padding-bottom: 15px;
+	z-index: 5;
+	width: 100%;
+}
+
+header#p-header.page-head {
+	left: 0px;
+}
+
+header#p-header.page-head.page-head-open {
+	left: 231px;
+}
+
+.page-head-open,
+.page-head {
+	-webkit-transition: left 200ms ease;
+	-moz-transition: left 200ms ease;
+	transition: left 200ms ease;
+}
+
+.page-header {
+
+}
+
+.page-title {
+	margin-left: 26px;
+	padding-bottom: -30px;
+	  font-size: 36px;
+	  font-weight: 300;
+	  float: left;
+	  clear: left;
+}
+
+.p-description {
+	  float: left;
+	  font-size: 22px;
+	  font-weight: 300;
+	  line-height: 1.1;
+	  padding: 40px 0 30px 30px;
+}
+
+.page-title .paper-name {
+	clear: left;
+	float: left;
+}
+
+.page-title .paper-name-large  {
+	margin: 0 5px;
+	padding: 0 20px;
+	clear: left;
+	float: left;
+	border-left: 4px solid #F5CC36;
+	border-right: 4px solid #F5CC36;
+	text-transform: uppercase;
+	line-height: 1.1;
+}
+
+.page-title .paper-name-small {
+	padding-left: 30px;
+	clear: left;
+	float: left;
+	font-size: 26px;
+	font-weight: 200;
+}
+
+.n-top {
+	margin-bottom: -5px;
+	text-transform: lowercase;
+}
+
+.n-bottom {
+	margin-top: -5px;
+
+}
+.paper-name .page-title-small {
+	border-width: 2px;
+}
+
+.page-title a {
+	text-decoration: none;
+}
+
+#nav-toggle{
+	width: 100%;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;s
+}
+
+#nav-toggle ul {
+	margin: 5px 0;
+}
+
+ul {}
+
+#nav-toggle ul li {
+	list-style-type: none;
+	text-transform: uppercase;
+	/* line-height: 2; */
+	/* height: 100%; */
+}
+
+#nav-toggle a {
+	margin-left: -10px;
+	font-size: 18px;
+	font-weight: 300;
+	color:  #FFF;
+	text-decoration: none;
+}
+
+.n-toggle {
+	left: 25px;
+}
+.n-toggle .nav-open a {
+	left: 286px;
+}
+
+.n-toggle .nav-open,
+.n-toggle {
+	-webkit-transition: left 200ms ease;
+	-moz-transition: left 200ms ease;
+	transition: left 200ms ease;
+}
+
+nav {
+	font-size: 15px;
+	font-weight: 200;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+}
+
+nav .nav-item {
+	margin-left: 5px;
+}
+
+#content {
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+.p-content {
+	left: 0;
+}
+
+.p-content.p-content-open {
+	left: 26px;
+}
+
+.p-content-open,
+.p-content {
+	-webkit-transition: left 200ms ease;
+	-moz-transition: left 200ms ease;
+	transition: left 200ms ease;
+}
+
+div.featured-img {
+	width: auto;
+	background-image: url("assets/img_WebSite_Hero.jpg")
+	background-size: cover;
+	background-position: center;
+}
+
+.posts-list {
+	padding-top: 550px;
+	width: 100%;
+
+}
+
+.post-container {
+	background-color:  #fff;
+}
+
+.post-container.post-container-open {
+	margin-left: -26px;
+}
+
+.post-container-open,
+.post-container {
+	-webkit-transition: left 200ms ease;
+	-moz-transition: left 200ms ease;
+	transition: left 200ms ease;
+}
+
+.posts-list a {
+	display: block
+}
+
+.posts-list .post {
+	border-bottom: 1px solid #DEDEDE
+}
+
+.posts-list .post .post-body {
+	width: 485px
+}
+
+.posts-list .post .post-img {
+	width: 155px;
+	height: 155px;
+	background-position: center;
+	background-size: cover;
+	margin-right: 20px
+}
+
+.post {
+	margin-left: 26px;
+}
+
+.post-img {
+	width:155px;
+	height:155px;
+	background-position: center;
+	background-size: cover;
+	border-radius:25%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+}
+
+.posts-list .post .post-body .post-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 24px
+}
+
+.posts-list .post .post-body .post-description {
+	font-size: 16px;
+	color: #595959
+}
+
+.posts-list .post .post-body .post-full {
+	font-size: 16px;
+	color: #595959
+}
+
+.posts-list .post .post-body .post-date {
+	font-size: 12px;
+	font-style: italic;
+	color: #595959
+}
+
+aside {
+	  border-left: 1px solid #333;
+	  float: left;
+	  width: 20%;
+	  margin-left: 40px;
+	  padding-left: 40px;
+}
+
+aside h3 {
+	margin-top: -5px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+aside ul {
+	padding-left: 20px;
+	color: #595959;
+	list-style-type: disc;
+}
+
+aside ul li {
+	text-decoration: none;
+}
+footer {
+	background-color: #333;
+	color: #FFF;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	border-top: 1px solid #DEDEDE;
+	clear: both;
+	width: 100%;
+	height: 50px;
+}

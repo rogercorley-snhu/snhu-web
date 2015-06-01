@@ -1,83 +1,4 @@
-/*
-abbr, address, article, aside, audio, b, blockquote, body, canvas, caption,
-cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption,
-figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe,
-img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp,
-section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot,
-th, thead, time, tr, ul, var, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline
-}
 
-article, aside, details, figcaption, figure, footer, header, hgroup,
-menu, nav, section {
-    display: block
-}
-
-blockquote, q {
-    quotes: none
-}
-
-blockquote:after, blockquote:before, q:after, q:before {
-    content: '';
-    content: none
-}
-
-ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none
-}
-
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: 700
-}
-
-del {
-    text-decoration: line-through
-}
-
-abbr[title], dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0
-}
-
-input, select {
-    vertical-align: middle
-}
-
-body {
-    font: 13px/1.231 sans-serif
-}
-
-button, input, select, textarea {
-    font: 99% sans-serif
-}
-
-code, kbd, pre, samp {
-    font-family: monospace, sans-serif
-}
-*/
 html {
     overflow-y: scroll
 }
@@ -86,16 +7,106 @@ a:active, a:hover {
     outline: 0
 }
 
+ol, ul {
+    margin-left: 2em
+}
+
+ol {
+    list-style-type: decimal
+}
+
 nav li, nav ul, nav li ul, nav li ul li {
     margin: 0;
     list-style: none
 }
 
-strong {
+small {
+    font-size: 85%
+}
+
+strong, th {
     font-weight: 700
 }
 
-body {
+td {
+    vertical-align: top
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 15px
+}
+
+textarea {
+    overflow: auto
+}
+
+.ie6 legend, .ie7 legend {
+    margin-left: -7px
+}
+
+input[type=radio] {
+    vertical-align: text-bottom
+}
+
+input[type=checkbox] {
+    vertical-align: bottom
+}
+
+.ie7 input[type=checkbox] {
+    vertical-align: baseline
+}
+
+.ie6 input {
+    vertical-align: text-bottom
+}
+
+button, input[type=button], input[type=image], input[type=submit],
+label {
+    cursor: pointer
+}
+
+button, input, select, textarea {
+    margin: 0
+}
+
+input:invalid, textarea:invalid {
+    border-radius: 1px;
+    -moz-box-shadow: 0 0 5px red;
+    -webkit-box-shadow: 0 0 5px red;
+    box-shadow: 0 0 5px red
+}
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+    background-color: #f0dddd
+}
+
+button {
+    width: auto;
+    overflow: visible
+}
+
+.ie7 img {
+    -ms-interpolation-mode: bicubic
+}
+
+body, input, select, textarea {
     color: #444
 }
 
@@ -111,8 +122,41 @@ a:hover {
     color: #036
 }
 
+.ir {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr
+}
+
 .hidden {
     display: none;
+    visibility: hidden
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+}
+
+.invisible {
     visibility: hidden
 }
 
@@ -129,6 +173,154 @@ a:hover {
 
 .clearfix {
     zoom: 1
+}
+
+@media print {
+    * {
+        background: 0 0 !important;
+        color: #000 !important;
+        text-shadow: none !important;
+        filter: none !important;
+        -ms-filter: none !important
+    }
+
+    a, a:visited {
+        color: #444 !important;
+        text-decoration: underline
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: ""
+    }
+
+    blockquote, pre {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
+
+    thead {
+        display: table-header-group
+    }
+
+    img, tr {
+        page-break-inside: avoid
+    }
+
+    @page {
+        margin: .5cm
+    }
+
+    h2, h3, p {
+        orphans: 3;
+        widows: 3
+    }
+
+    h2, h3 {
+        page-break-after: avoid
+    }
+}
+
+code[class*=language-], pre[class*=language-] {
+    color: #f8f8f2;
+    text-shadow: 0 1px rgba(0, 0, 0, .3);
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    background: 0 0;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+    border-width: 0
+}
+
+pre[class*=language-] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: .3em
+}
+
+:not(pre)>code[class*=language-], pre[class*=language-] {
+    background: #272822
+}
+
+:not(pre)>code[class*=language-] {
+    padding: .1em;
+    border-radius: .3em
+}
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+    color: #708090
+}
+
+.token.punctuation {
+    color: #f8f8f2
+}
+
+.namespace {
+    opacity: .7
+}
+
+.token.constant, .token.deleted, .token.property, .token.symbol,
+.token.tag {
+    color: #f92672
+}
+
+.token.boolean, .token.number {
+    color: #ae81ff
+}
+
+.token.attr-name, .token.builtin, .token.char, .token.inserted,
+.token.selector, .token.string {
+    color: #a6e22e
+}
+
+.language-css .token.string, .style .token.string, .token.entity,
+.token.operator, .token.url, .token.variable {
+    color: #f8f8f2
+}
+
+.token.atrule, .token.attr-value, .token.function {
+    color: #e6db74
+}
+
+.token.keyword {
+    color: #66d9ef
+}
+
+.token.important, .token.regex {
+    color: #fd971f
+}
+
+.token.bold, .token.important {
+    font-weight: 700
+}
+
+.token.italic {
+    font-style: italic
+}
+
+.token.entity {
+    cursor: help
 }
 
 body {
@@ -227,10 +419,19 @@ nav .nav-item {
     margin-left: 20px
 }
 
-nav div #news-hide, #classifieds-hide, #tourism-hide {
+
+#news-hide, #classified-hide, #tourism-hide {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
     left: 0px;
     top: 50px;
-    display: inline-block;
+    display: none;
+    position: fixed;
 }
 
 ol, ul {
