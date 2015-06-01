@@ -12,8 +12,13 @@
 <!--  CSS Links
 ====================================================== -->
 
+<<<<<<< HEAD
 <link rel="stylesheet" href="style-built.css">	
 
+=======
+
+<link rel="stylesheet" href="style-built.css">
+>>>>>>> origin/master
 
 
 <!--  jQuery Links
@@ -30,6 +35,7 @@
 
 <nav>
 	<div class="l-container">
+<<<<<<< HEAD
 		<div class="l-right">
 			<ul class="l-row">
 
@@ -79,6 +85,57 @@
 		</div>  <!-- /.l-right -->
 	</div>  <!-- /.l-container -->
 
+=======
+			<div class="l-right">
+				<ul class="l-row">
+
+					<li id="home" class="nav-item l-left">Home<a href="#"></a></li>
+					<li id="news" class="nav-item l-left">News<a id="n-toggle" href="#" style="padding: 0 0 0 5px;">&#9660;</a></li>
+					<li id="classifieds" class="nav-item l-left">Classifieds<a id="c-toggle" href="#" style="padding: 0 0 0 5px;">&#9660;</a></li>
+					<li id="tourism" class="nav-item l-left">Tourism<a id="t-toggle" href="#" style="padding: 0 0 0 5px;">&#9660;</a></li>
+					<li id="subscriptions" class="nav-item l-left"><a href="#">Subscriptions</a></li>
+					<li id="contact" class="nav-item l-left"><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+	</div>
+	
+	<div id="news-hidden" class="l-container hidden">
+		<div class="l-right">  
+			<ul class="l-row">
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">Local | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">State | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">National | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">International | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">Sports | </a></li>
+				<li "nav-item l-right"><a class="nav-item l-left" href="#">Weather</a></li>
+			</ul>
+		</div>
+	</div>	
+
+	<div id="classified-hidden" class="l-container">
+		<div class="l-right">
+			<ul class="l-row">
+				<li><a class="nav-item l-left" href="">For Sale | </a></li>
+				<li><a class="nav-item l-left" href="">Wanted | </a></li>
+				<li><a class="nav-item l-left" href="">Employement | </a></li>
+				<li><a class="nav-item l-left" href="">Real Estate | </a></li>
+				<li><a class="nav-item l-left" href="">Personal</a></li>
+			</ul>
+		</div>
+	</div>	
+
+	<div id="tourism-hidden" class="l-container">
+		<div class="l-right">
+			<ul class="l-row">
+				<li><a href="">Attractions | </a></li>
+				<li><a href="">Events | </a></li>
+				<li><a href="">Parks | </a></li>
+				<li><a href="">Camping</a></li>
+			</ul>
+		</div>
+	</div>
+
+>>>>>>> origin/master
 </nav>
 
 <div class="page-header l-container l-padding-tb-45">
@@ -155,6 +212,7 @@
 
 
 </body>
+<<<<<<< HEAD
 <script type="text/javascript">
 $(document).ready 
 (
@@ -173,6 +231,55 @@ $(document).ready
 			{ 	$("#news-hidden").hide();  		} );
 	}
 );
+=======
+
+<script type="text/javascript">
+
+	$(document).ready() { 
+
+		$("#n-toggle").click(function() {
+    		$(this).toggleText("&#9660;", "&#9650;");
+    		$("div#news-hidden").toggle();
+		});
+
+
+	});
+>>>>>>> origin/master
 
 </script>
+
+<!--
+<script type="text/javascript">
+
+
+
+	$('#news-toggle').toggle(function() {
+		$('#plus').text("&#9650;"); 
+		$('#news-hidden').show();
+	},function(){
+		$('#plus').text("&#9660;");
+		$('#news-hidden').hide();
+	});
+
+
+	$('#classifieds-toggle').toggle(function(){
+		$('#plus').text("&#9650;"); 
+		$('#classifieds-hidden').show();
+	},function(){
+		$('#plus').text("&#9660;");
+		$('#classifieds-hidden').hide();
+	});
+
+
+	$('#tourism-toggle').toggle(function(){
+		$('#plus').text("&#9650;"); 
+		$('#tourism-hidden').show();
+	},function(){
+		$('#plus').text("&#9660;");
+		$('#tourism-hidden').hide();
+	});
+
+</script> 
+-->
+
 </html>
