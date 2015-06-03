@@ -7,7 +7,7 @@
   -webkit-touch-callout: none;
 
   font: 16px/21px "Segoe UI", 'Helvetica Neue', Helvetica, Arial;
-  background-color: #FFF; 
+  background-color: #FFF;
 
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -59,4 +59,8 @@ footer {
   line-height: 1.2em;
   text-align: center;
 
+}
+
+aside {
+  float: right;
 }

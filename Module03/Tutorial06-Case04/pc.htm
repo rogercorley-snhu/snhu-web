@@ -135,8 +135,33 @@ Supporting files:
 
 					<li class="p-order-line"><label class="p-required p-label" for="phone">* Phone:</label>
 						<input type="tel" id="phone" class="formField" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="123-456-7890" required /></li>
+
+					<aside id="dvdChk" class="p-form-chkbox">
+						<li>
+							<h3 class="p-form">Select Options:</h3>
+						</li>
+
+						<input type="checkbox" id="dvd" />
+
+						<label for="dvd">
+							<span class="circle"></span>
+							<span class="check"></span>
+							<span class="box"></span>
+
+							DVD Burner
+
+						</label>
+
+						<p>Would you like us to install it?</p>
+
+					</aside>
 				</div>
+
+
+
 			</ul>
+
+
 
 			<div class="p-button-wrapper">
 
@@ -239,8 +264,32 @@ Supporting files:
 		monList ['monSize'] = ["15\"","17\"","19\"","21\""];
 		driveList ['driveSize'] = ["240GB","500GB","750GB","1TB"];
 
+		$('label').click(function() {
+			var el = $(this).children('span:first-child');
+			el.addClass('circle');
 
-	})
+			var newone = el.clone(true);
+			el.before(newone);
+
+			$("." + el.attr("class") + ":last").remove();
+		});
+
+	});
+
+
+
+
+
+
+
+  // clone it
+
+
+  // add the cloned version before our original
+
+
+
+});
 
 </script>
 
