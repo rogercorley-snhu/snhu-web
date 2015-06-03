@@ -1,0 +1,250 @@
+<!DOCTYPE html><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<html lang="en">
+
+<head>
+<!-- =============================================================   
+
+Book:         New Perspectives on HTML and CSS
+Project:      Tutorial 6 : Case Problem 4
+``````````````````````````````````````````````````````````````````
+Page:         Millennium Computers : Order Page
+``````````````````````````````````````````````````````````````````
+Author:       Roger Corley
+Date:         June 1, 2015
+``````````````````````````````````````````````````````````````````
+Filename:
+pc.htm
+
+Supporting files:
+********  TO DO *************
+*List supporting files for this page
+*******************************
+
+================================================================== -->
+
+<title>Millennial Computers : Order Form </title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/oform.css">
+<link rel="stylesheet" href="css/mill.css">
+
+<link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html">
+<link rel="import" href="http://www.polymer-project.org/components/font-roboto/roboto.html">
+
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/formsubmit.js"></script> 
+
+</head>
+
+<body>
+
+<div id="p-wrapper">
+
+<header>
+</header>
+
+<section>
+	<div id="user-info">
+		<form id="orderForm" class="p-form" action="" method="post" name="orderForm">
+			<ul>
+				<li>
+					<h2 class="p-form">Customer Information</h2>
+					<span class="p-required strong small">* Denotes Required Field</span>
+				</li>
+
+				<div class="p-form-input">
+					<li><label class="p-required p-label" for="firstName">* First Name:</label>
+						<input type="text" id="fname" class="formField"  name="firstName" required autofocus /></li>
+
+					<li><label class="p-required p-label" for="lastName">* Last Name:</label>
+						<input type="text" id="lname" class="formField"  name="lastName" required /></li>
+
+					<li><label class="p-label" for="street01">Street:</label>
+						<input type="text" id="street" class="formField"  name="street" /></li>
+
+					<li><label class="p-label" for="city">City:</label>
+						<input type="text" id="city" class="formField" name="city" /></li>
+
+					<li><label class="p-label" for="state">State:</label>
+						<input type="text" id="state" class="formField" name="state" /></li>
+
+					<li><label class="p-required p-label" for="postCode">* Zip Code:</label>
+						<input type="text" id="zip" class="formField" name="zip" pattern="[0-9]*"  max-length="5" title="90210" required /></li>
+
+					<li><label class="p-required p-label" for="phone">* Phone:</label>
+						<input type="tel" id="phone" class="formField" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="123-456-7890" required /></li>
+				</div>
+			</ul>
+
+			<div class="p-button-wrapper">
+				
+				<div class="p-button raised blue">
+					<a href="#order-info" class="p-btn-a">
+						<ul>
+							<li>
+								<div class="center" fit>NEXT</div>
+								<paper-ripple fit></paper-ripple>
+							</li>
+						</ul>
+					</a>
+				</div>
+
+
+				<div class="p-button raised red">
+					<a href="#customer-info" class="p-btn-a">
+						<ul>
+							<li><div class="center" fit>CANCEL</div>
+							<paper-ripple fit></paper-ripple></li>
+						</ul>
+					</a>
+				</div>	
+			</div>
+		</form>
+	</div> <!-- close .p-form -->
+</section>  <!-- close #userForm -->
+
+<div class="spacer"></div>
+
+<section>
+	<div id="order-info">
+		<form id="orderForm" class="p-form" action="" method="post" name="orderForm">
+			<ul>
+				<li>
+					<h2 class="p-form">Order Information</h2>
+					<span class="p-required strong small">* Denotes Required Field</span>
+				</li>
+
+				<div class="p-form-input">
+					<li class="p-order-line"><label class="p-required p-label" for="pSpeed">* Processor:</label>
+						<input type="text" id="pSpeed" class="formField"  name="pSpeed" required autofocus /></li>
+
+					<li class="p-order-line"><label class="p-required p-label" for="memory">* Memory:</label>
+						<input type="text" id="memory" class="formField"  name="memory" required /></li>
+
+					<li class="p-order-line"><label class="p-label" for="monitor">Monitor Size:</label>
+						<input type="text" id="monitor" class="formField"  name="monitor" /></li>
+
+					<li class="p-order-line"><label class="p-label" for="hd">Hard Drive Size:</label>
+						<input type="text" id="hd" class="formField" name="hd" /></li>
+
+					<li class="p-order-line"><label class="p-label" for="state">State:</label>
+						<input type="text" id="state" class="formField" name="state" /></li>
+
+					<li class="p-order-line"><label class="p-required p-label" for="postCode">* Zip Code:</label>
+						<input type="text" id="zip" class="formField" name="zip" pattern="[0-9]*"  max-length="5" title="90210" required /></li>
+
+					<li class="p-order-line"><label class="p-required p-label" for="phone">* Phone:</label>
+						<input type="tel" id="phone" class="formField" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="123-456-7890" required /></li>
+				</div>
+			</ul>
+
+			<div class="p-button-wrapper">
+				
+				<div class="p-button raised blue">
+					<a href="#order-summary" class="p-btn-a">
+						<ul>
+							<li>
+								<div class="center" fit>NEXT</div>
+								<paper-ripple fit></paper-ripple>
+							</li>
+						</ul>
+					</a>
+				</div>
+
+				<div class="p-button raised red">
+					<ul>
+						<div class="center" fit>CANCEL</div>
+						<paper-ripple fit></paper-ripple>
+					</ul>
+				</div>	
+			</div>
+		</form>
+	</div> <!-- close .p-form -->
+</section>  <!-- close #userForm -->
+
+<div class="spacer"></div>
+
+<section>
+	<div id="order-summary">
+		<form id="orderForm" class="p-form" action="" method="post" name="orderForm">
+			<ul>
+				<li>
+					<h2 class="p-form">Order Summary</h2>
+					<span class="p-required strong small">* Denotes Required Field</span>
+				</li>
+
+				<div class="p-form-input">
+					<li><label class="p-required p-label" for="firstName">* First Name:</label>
+						<input type="text" id="fname" class="formField"  name="firstName" required autofocus /></li>
+
+					<li><label class="p-required p-label" for="lastName">* Last Name:</label>
+						<input type="text" id="lname" class="formField"  name="lastName" required /></li>
+
+					<li><label class="p-label" for="street01">Street:</label>
+						<input type="text" id="street" class="formField"  name="street" /></li>
+
+					<li><label class="p-label" for="city">City:</label>
+						<input type="text" id="city" class="formField" name="city" /></li>
+
+					<li><label class="p-label" for="state">State:</label>
+						<input type="text" id="state" class="formField" name="state" /></li>
+
+					<li><label class="p-required p-label" for="postCode">* Zip Code:</label>
+						<input type="text" id="zip" class="formField" name="zip" pattern="[0-9]*"  max-length="5" title="90210" required /></li>
+
+					<li><label class="p-required p-label" for="phone">* Phone:</label>
+						<input type="tel" id="phone" class="formField" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="123-456-7890" required /></li>
+				</div>
+			</ul>
+
+			<div class="p-button-wrapper">
+				
+				<div class="p-button raised green">
+					<ul>
+						<li>
+							<div class="center" fit>SUBMIT</div>
+							<paper-ripple fit></paper-ripple>
+						</li>
+					</ul>
+				</div>
+
+				<div class="p-button raised red">
+					<ul>
+						<div class="center" fit>CANCEL</div>
+						<paper-ripple fit></paper-ripple>
+					</ul>
+				</div>	
+			</div>
+		</form>
+	</div> <!-- close .p-form -->
+</section>  <!-- close #userForm -->
+
+<div class="spacer"></div>
+
+
+  <footer>Copyright &copy; Roger Corley - 2015</footer>
+
+</div>  <!-- close #wrapper  -->
+
+
+<!--  jQuery : CDN Version Link
+====================================================== -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	
+	$(document).ready(function() {
+
+		var orderList = {};
+		procList ['procSpeed'] = ["3.2 GHz","4 GHz","5.2 GHz"];
+		
+
+	})
+
+</script>
+
+<!--  jQuery : Site Scripts
+====================================================== -->
+<script></script>
+
+</body>
+
+</html>
