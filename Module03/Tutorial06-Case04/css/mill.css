@@ -1,7 +1,8 @@
- 
-
- body 
+body
  				{
+					margin:  0;
+					padding: 0;
+
 					webkit-user-select: none;
 					-moz-user-select: none;
 					-ms-user-select: none;
@@ -15,7 +16,7 @@
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;			}
 
-.strong 
+.strong
 				{ 	font-weight: 600; 					}
 
 .small 				{ 	font-size: .75em; 					}
@@ -26,25 +27,29 @@
 
 .hidden 				{ 	display: none; 						}
 
-#p-wrapper 
+#p-wrapper
 				{
-					width: 980px;
+					width: 960px;
 					margin: auto; 						}
 
-section 
-				{	padding: 30px 25px;					}
+section
+				{	padding: 30px 25px; width: 95%; height: 1920px				}
 
-section > * 
+section > *
 				{ 	margin: 10px;						}
 
-.spacer 	
+.spacer
 				{ 	padding: 100px 0; 					}
 
 #order-info,
-#order-summary 
+#order-summary
 				{ 	padding-top: 30px; 					}
 
-footer 
+#orderSpecs,
+#optionsChk
+				{	width: 50%; float: left;					}
+
+footer
 				{
 					width: 100%;
 					height: 28px;
@@ -60,5 +65,5 @@ footer
 					text-align: center; 					}
 
 
-aside 
+aside
 				{	float: right;						}

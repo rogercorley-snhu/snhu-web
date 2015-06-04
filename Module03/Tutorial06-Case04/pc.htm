@@ -52,21 +52,21 @@ Supporting files:
 					<span class="p-required strong small">* Denotes Required Field</span>
 				</li>
 
-				<div class="p-form-input">
+				<div id="custInfo" class="p-form-input">
 					<li><label class="p-required p-label" for="firstName">* First Name:</label>
 						<input type="text" id="fname" class="formField"  name="firstName" required autofocus /></li>
 
 					<li><label class="p-required p-label" for="lastName">* Last Name:</label>
 						<input type="text" id="lname" class="formField"  name="lastName" required /></li>
 
-					<li><label class="p-label" for="street01">Street:</label>
-						<input type="text" id="street" class="formField"  name="street" /></li>
+					<li><label class="p-required p-label" for="street01">* Street:</label>
+						<input type="text" id="street" class="formField"  name="street" required /></li>
 
-					<li><label class="p-label" for="city">City:</label>
-						<input type="text" id="city" class="formField" name="city" /></li>
+					<li><label class="p-required p-label" for="city">* City:</label>
+						<input type="text" id="city" class="formField" name="city" required /></li>
 
-					<li><label class="p-label" for="state">State:</label>
-						<input type="text" id="state" class="formField" name="state" /></li>
+					<li><label class="p-required p-label" for="state">* State:</label>
+						<input type="text" id="state" class="formField" name="state" required /></li>
 
 					<li><label class="p-required p-label" for="postCode">* Zip Code:</label>
 						<input type="text" id="zip" class="formField" name="zip" pattern="[0-9]*"  max-length="5" title="90210" required /></li>
@@ -111,63 +111,84 @@ Supporting files:
 			<ul>
 				<li>
 					<h2 class="p-form">Order Information</h2>
-					<span class="p-required strong small">* Denotes Required Field</span>
+					<span class="p-required strong small"></span>
 				</li>
 
 				<div class="formWrapper">
-					<div id="orderSpecs" class="p-form-input">
-						<li class="p-order-line"><label class="p-required p-label" for="pSpeed">* Processor:</label>
-							<input type="text" id="pSpeed" class="formField"  name="pSpeed" required autofocus /></li>
-
-						<li class="p-order-line"><label class="p-required p-label" for="memory">* Memory:</label>
-							<input type="text" id="memory" class="formField"  name="memory" required /></li>
-
-						<li class="p-order-line"><label class="p-label" for="monitor">Monitor Size:</label>
-							<input type="text" id="monitor" class="formField"  name="monitor" /></li>
-
-						<li class="p-order-line"><label class="p-label" for="hd">Hard Drive Size:</label>
-							<input type="text" id="hd" class="formField" name="hd" /></li>
-
-						<li class="p-order-line"><label class="p-label" for="state">State:</label>
-							<input type="text" id="state" class="formField" name="state" /></li>
-
-						<li class="p-order-line"><label class="p-required p-label" for="postCode">* Zip Code:</label>
-							<input type="text" id="zip" class="formField" name="zip" pattern="[0-9]*"  max-length="5" title="90210" required /></li>
-
-						<li class="p-order-line"><label class="p-required p-label" for="phone">* Phone:</label>
-							<input type="tel" id="phone" class="formField" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="123-456-7890" required /></li>
-					</div>
-					
-					<aside id="dvdChk" class="p-form-chkbox">
 						<li id="specOptions" class="p-order-line">
 							<h3 class="p-form">Select Options:</h3>
 						</li>
 
-						<li id="dvdLine" class="p-order-line">
-							<input type="checkbox" id="dvd" />
+					<div class="boxWrapper">
+						<div id="orderSpecs" class="p-form-input">
 
-							<label for="dvd">DVD Burner</label>
-						</li>
-						
-						<li id="tunerLine" class="p-order-line">
-							<input type="checkbox" id="tuner">
+							<li class="p-order-line"><label class="p-label" for="proc">* Processor:</label>
+								<select class="select-field" name="select-proc" id="proc" autofocus>
+									<option value="3.2GHz">3.2GHz</option>
+									<option value="4.0GHz">4.0GHz</option>
+									<option value="5.2GHz">5.2GHz</option>
+								</select>
+							</li>
 
-							<label for="tuner">Tuner Card</label>
-						</li>
+							<li class="p-order-line"><label class="p-label" for="memory">* Memory:</label>
+								<select name="select-mem" id="mem" class="select-field">
+									<option value="1GB">1GB</option>
+									<option value="2GB">2GB</option>
+									<option value="4GB">4GB</option>
+									<option value="8GB">8GB</option>
+								</select>
+							</li>
 
-						<li id="tunerLine" class="p-order-line">
-							<input type="checkbox" id="mcard">
+							<li class="p-order-line"><label class="p-label" for="monitor">Monitor Size:</label>
+								<select name="select-monitor" id="monitor" class="select-field">
+									<option value="15&quot;">15&quot;</option>
+									<option value="17&quot;">17&quot;</option>
+									<option value="19&quot;">19&quot;</option>
+									<option value="21&quot;">21&quot;</option>
+								</select>
+							</li>
 
-							<label for="mcard">Media Card Reader</label>
-						</li>
+							<li class="p-order-line"><label class="p-label" for="hd">Hard Drive Size:</label>
+								<select name="select-hd" id="hd" class="select-field">
+									<option value="240GB">240GB</option>
+									<option value="500GB">500GB</option>
+									<option value="750GB">750GB</option>
+									<option value="1TB">1TB</option>
+								</select>
+							</li>
 
-						<li class="p-order-line spacer"></li>
+							<li class="p-order-line spacer"></li>
+							<li class="p-order-line spacer"></li>
 
-						<li class="p-order-line spacer"></li>
+						</div>
 
-						<li class="p-order-line spacer"></li>
+						<aside id="optionsChk" class="p-form-chkbox">
 
-					</aside>
+							<li id="dvdLine" class="p-order-line">
+								<input type="checkbox" id="dvd" />
+								<label for="dvd">DVD Burner</label>
+							</li>
+
+							<li id="tunerLine" class="p-order-line">
+								<input type="checkbox" id="tuner">
+								<label for="tuner">Tuner Card</label>
+							</li>
+
+							<li id="mediaCard" class="p-order-line">
+								<input type="checkbox" id="mcard">
+								<label for="mcard">Media Card Reader</label>
+							</li>
+
+							<li id="warranty" class="p-order-line">
+								<input type="checkbox" id="warranty">
+								<label for="warranty">24-Month Extended Warranty</label>
+							</li>
+
+							<li class="p-order-line spacer"></li>
+							<li class="p-order-line spacer"></li>
+
+						</aside>
+					</div>  <!-- close .boxWrapper  -->
 				<div>  <!-- close Form Input Wrapper  -->
 			</ul>
 

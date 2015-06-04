@@ -1,6 +1,4 @@
 
-
-
 *:focus
 				{	outline: none;								}
 
@@ -36,7 +34,6 @@ label, p
 
 #orderForm ul
 				{
-					width:750px;
 					list-style-type:none;
 					list-style-position:outside;
 					margin:0px;
@@ -52,7 +49,7 @@ label, p
 					text-decoration: none; 							}
 
 
-.p-order-line 
+.p-order-line
 				{
 					  background-color: #F9F9F9;
 					  padding: 12px;
@@ -64,26 +61,30 @@ label, p
 				{										}
 
 
-.p-form-input input
+.p-form-input input,
+.p-form-input select
 				{
 					left: 135px;
 					position: absolute;
 					border:1px solid #aaa;
 					border-radius:2px; 							}
 
-.p-form-input input:focus
+.p-form-input input:focus,
+.p-form-input select:focus
 				{
 					background: #fff;
 					border:1px solid #EE7600;
 					box-shadow: 0 0 3px #F39F4C; 						}
 
+.p-order-line select {  }
 
+.select-field { width: 175px;}
 .p-form H2
 				{	font-size: 48px; font-weight: 200; margin-bottom: 25px; 			}
 
 
-.p-form h3 
-				{ 	margin:0; padding: 25px 0 5px 0; font-weight: 400			}
+.p-form h3
+				{ 	margin:0; padding: 25px 0 5px 0; font-size: 26px; font-weight: 300			}
 
 
 .p-form-span
@@ -100,24 +101,27 @@ label, p
 				{ 	position: relative; 							}
 
 
-#orderForm ul div li:first-child
+#custInfo li:first-child
 				{ 	border-top:1px solid #777; padding-top: 30px; 				}
 
 
-#orderForm ul div li:last-child
+#custInfo li:last-child
 				{	border-bottom:1px solid #777; padding-bottom: 30px;	 		}
 
 #orderSpecs
 				{ 	width: 45%; float: left;							}
 
-#dvdChk	
+#dvdChk
 				{ 	width: 40%; float: left; 							}
 
-aside#dvdChk li#specOptions	
+ li#specOptions
 				{ 	padding-top: 0;								}
 
 .p-order-line.spacer
 				{ 	padding-top: 33px;							}
+
+.p-order-line.spacer-first
+				{	padding-top: 50px;								}
 
 .p-btn-a
 				{	text-decoration: none; color: #FFF;					}
