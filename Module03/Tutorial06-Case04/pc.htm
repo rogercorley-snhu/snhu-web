@@ -114,51 +114,61 @@ Supporting files:
 					<span class="p-required strong small">* Denotes Required Field</span>
 				</li>
 
-				<div class="p-form-input">
-					<li class="p-order-line"><label class="p-required p-label" for="pSpeed">* Processor:</label>
-						<input type="text" id="pSpeed" class="formField"  name="pSpeed" required autofocus /></li>
+				<div class="formWrapper">
+					<div id="orderSpecs" class="p-form-input">
+						<li class="p-order-line"><label class="p-required p-label" for="pSpeed">* Processor:</label>
+							<input type="text" id="pSpeed" class="formField"  name="pSpeed" required autofocus /></li>
 
-					<li class="p-order-line"><label class="p-required p-label" for="memory">* Memory:</label>
-						<input type="text" id="memory" class="formField"  name="memory" required /></li>
+						<li class="p-order-line"><label class="p-required p-label" for="memory">* Memory:</label>
+							<input type="text" id="memory" class="formField"  name="memory" required /></li>
 
-					<li class="p-order-line"><label class="p-label" for="monitor">Monitor Size:</label>
-						<input type="text" id="monitor" class="formField"  name="monitor" /></li>
+						<li class="p-order-line"><label class="p-label" for="monitor">Monitor Size:</label>
+							<input type="text" id="monitor" class="formField"  name="monitor" /></li>
 
-					<li class="p-order-line"><label class="p-label" for="hd">Hard Drive Size:</label>
-						<input type="text" id="hd" class="formField" name="hd" /></li>
+						<li class="p-order-line"><label class="p-label" for="hd">Hard Drive Size:</label>
+							<input type="text" id="hd" class="formField" name="hd" /></li>
 
-					<li class="p-order-line"><label class="p-label" for="state">State:</label>
-						<input type="text" id="state" class="formField" name="state" /></li>
+						<li class="p-order-line"><label class="p-label" for="state">State:</label>
+							<input type="text" id="state" class="formField" name="state" /></li>
 
-					<li class="p-order-line"><label class="p-required p-label" for="postCode">* Zip Code:</label>
-						<input type="text" id="zip" class="formField" name="zip" pattern="[0-9]*"  max-length="5" title="90210" required /></li>
+						<li class="p-order-line"><label class="p-required p-label" for="postCode">* Zip Code:</label>
+							<input type="text" id="zip" class="formField" name="zip" pattern="[0-9]*"  max-length="5" title="90210" required /></li>
 
-					<li class="p-order-line"><label class="p-required p-label" for="phone">* Phone:</label>
-						<input type="tel" id="phone" class="formField" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="123-456-7890" required /></li>
-
+						<li class="p-order-line"><label class="p-required p-label" for="phone">* Phone:</label>
+							<input type="tel" id="phone" class="formField" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="123-456-7890" required /></li>
+					</div>
+					
 					<aside id="dvdChk" class="p-form-chkbox">
-						<li>
+						<li id="specOptions" class="p-order-line">
 							<h3 class="p-form">Select Options:</h3>
 						</li>
 
-						<input type="checkbox" id="dvd" />
+						<li id="dvdLine" class="p-order-line">
+							<input type="checkbox" id="dvd" />
 
-						<label for="dvd">
-							<span class="circle"></span>
-							<span class="check"></span>
-							<span class="box"></span>
+							<label for="dvd">DVD Burner</label>
+						</li>
+						
+						<li id="tunerLine" class="p-order-line">
+							<input type="checkbox" id="tuner">
 
-							DVD Burner
+							<label for="tuner">Tuner Card</label>
+						</li>
 
-						</label>
+						<li id="tunerLine" class="p-order-line">
+							<input type="checkbox" id="mcard">
 
-						<p>Would you like us to install it?</p>
+							<label for="mcard">Media Card Reader</label>
+						</li>
+
+						<li class="p-order-line spacer"></li>
+
+						<li class="p-order-line spacer"></li>
+
+						<li class="p-order-line spacer"></li>
 
 					</aside>
-				</div>
-
-
-
+				<div>  <!-- close Form Input Wrapper  -->
 			</ul>
 
 
@@ -247,7 +257,7 @@ Supporting files:
 <div class="spacer"></div>
 
 
-  <footer>Copyright &copy; Roger Corley - 2015</footer>
+	<footer>Copyright &copy; Roger Corley - 2015</footer>
 
 </div>  <!-- close #wrapper  -->
 
@@ -275,19 +285,6 @@ Supporting files:
 		});
 
 	});
-
-
-
-
-
-
-
-  // clone it
-
-
-  // add the cloned version before our original
-
-
 
 });
 

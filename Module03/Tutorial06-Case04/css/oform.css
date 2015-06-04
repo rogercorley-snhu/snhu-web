@@ -4,9 +4,9 @@
 *:focus
 				{	outline: none;								}
 
-
+/*
 input[type=checkbox]
-				{	display:none;								}  /* hide the checkbox */
+				{	display:none;								} */  /* hide the checkbox */
 
 label, p
 				{	padding: 0;								}
@@ -17,7 +17,7 @@ label, p
 					font-weight: 600;
 					font-size: .85em;
 					padding-left: 10px;
-					color: #EE7600;								}
+					color: #EE7600;							}
 
 .p-required.p-label
 				{
@@ -42,14 +42,23 @@ label, p
 					margin:0px;
 					padding:0px; 								}
 
-.p-form-input li
+.p-form-input li,
+.p-form-chkbox li
 				{
 					background-color: #F9F9F9;
 					padding:12px;
 					border-bottom:1px solid #EEE;
 					position: relative;
-					text-decoration: none; 						}
+					text-decoration: none; 							}
 
+
+.p-order-line 
+				{
+					  background-color: #F9F9F9;
+					  padding: 12px;
+					  border-bottom: 1px solid #EEE;
+					  position: relative;
+					  text-decoration: none;							}
 
 .p-form-input label
 				{										}
@@ -57,7 +66,7 @@ label, p
 
 .p-form-input input
 				{
-					left: 100px;
+					left: 135px;
 					position: absolute;
 					border:1px solid #aaa;
 					border-radius:2px; 							}
@@ -70,7 +79,11 @@ label, p
 
 
 .p-form H2
-				{	font-size: 48px; font-weight: 200; margin-bottom: 25px; 		}
+				{	font-size: 48px; font-weight: 200; margin-bottom: 25px; 			}
+
+
+.p-form h3 
+				{ 	margin:0; padding: 25px 0 5px 0; font-weight: 400			}
 
 
 .p-form-span
@@ -94,11 +107,23 @@ label, p
 #orderForm ul div li:last-child
 				{	border-bottom:1px solid #777; padding-bottom: 30px;	 		}
 
+#orderSpecs
+				{ 	width: 45%; float: left;							}
+
+#dvdChk	
+				{ 	width: 40%; float: left; 							}
+
+aside#dvdChk li#specOptions	
+				{ 	padding-top: 0;								}
+
+.p-order-line.spacer
+				{ 	padding-top: 33px;							}
+
 .p-btn-a
 				{	text-decoration: none; color: #FFF;					}
 
 .p-button-wrapper
-				{	padding-top: 15px; 							}
+				{	padding-top: 15px;  clear: both;						}
 
 .p-button
 				{
@@ -171,7 +196,7 @@ label, p
 
 
 input[type=checkbox]:check ~ .p-form-chkbox label .box
-				{ 	opacity: 0; -webkit-transform: rotate(180deg);  			}
+				{ 	opacity: 0; -webkit-transform: rotate(180deg);  				}
 
 input[type=checkbox]:checked ~ .p-form-chkbox label .box
 				{ 	opacity: 1; -webkit-transform:scale(1) rotate(45deg);			}
