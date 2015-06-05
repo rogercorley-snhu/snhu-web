@@ -41,8 +41,12 @@ section > *
 .spacer
 				{ 	padding: 100px 0; 					}
 
+textarea 
+				{ 	outline: none; resize: none; overflow: auto;		}
+
 #order-info,
-#order-summary
+#order-summary,
+#text-box
 				{ 	padding-top: 30px; 					}
 
 #orderSpecs,

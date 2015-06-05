@@ -221,6 +221,121 @@ Supporting files:
 <div class="spacer"></div>
 
 <section>
+	<div id="text-box">
+		<form id="textForm" class="p-form" action="" method="post" name="textForm">
+			<ul>
+				<li>
+					<h2 class="p-form">Additional Requests or Comments</h2>
+					<span class="p-required strong small">* Please limit comments to 500 words</span>
+				</li>
+
+				<div class="formWrapper">
+						<li id="specOptions" class="p-order-line">
+							<h3 class="p-form"> </h3>
+						</li>
+
+					<div class="boxWrapper">
+						<div id="orderSpecs" class="p-form-input">
+
+							<li class="p-order-line"><label class="p-label" for="proc">* Processor:</label>
+								<select class="select-field" name="select-proc" id="proc" autofocus>
+									<option value="3.2GHz">3.2GHz</option>
+									<option value="4.0GHz">4.0GHz</option>
+									<option value="5.2GHz">5.2GHz</option>
+								</select>
+							</li>
+
+							<li class="p-order-line"><label class="p-label" for="memory">* Memory:</label>
+								<select name="select-mem" id="mem" class="select-field">
+									<option value="1GB">1GB</option>
+									<option value="2GB">2GB</option>
+									<option value="4GB">4GB</option>
+									<option value="8GB">8GB</option>
+								</select>
+							</li>
+
+							<li class="p-order-line"><label class="p-label" for="monitor">Monitor Size:</label>
+								<select name="select-monitor" id="monitor" class="select-field">
+									<option value="15&quot;">15&quot;</option>
+									<option value="17&quot;">17&quot;</option>
+									<option value="19&quot;">19&quot;</option>
+									<option value="21&quot;">21&quot;</option>
+								</select>
+							</li>
+
+							<li class="p-order-line"><label class="p-label" for="hd">Hard Drive Size:</label>
+								<select name="select-hd" id="hd" class="select-field">
+									<option value="240GB">240GB</option>
+									<option value="500GB">500GB</option>
+									<option value="750GB">750GB</option>
+									<option value="1TB">1TB</option>
+								</select>
+							</li>
+
+							<li class="p-order-line spacer"></li>
+							<li class="p-order-line spacer"></li>
+
+						</div>
+
+						<aside id="optionsChk" class="p-form-chkbox">
+
+							<li id="dvdLine" class="p-order-line">
+								<input type="checkbox" id="dvd" />
+								<label for="dvd">DVD Burner</label>
+							</li>
+
+							<li id="tunerLine" class="p-order-line">
+								<input type="checkbox" id="tuner">
+								<label for="tuner">Tuner Card</label>
+							</li>
+
+							<li id="mediaCard" class="p-order-line">
+								<input type="checkbox" id="mcard">
+								<label for="mcard">Media Card Reader</label>
+							</li>
+
+							<li id="warranty" class="p-order-line">
+								<input type="checkbox" id="warranty">
+								<label for="warranty">24-Month Extended Warranty</label>
+							</li>
+
+							<li class="p-order-line spacer"></li>
+							<li class="p-order-line spacer"></li>
+
+						</aside>
+					</div>  <!-- close .boxWrapper  -->
+				<div>  <!-- close Form Input Wrapper  -->
+			</ul>
+
+
+
+			<div class="p-button-wrapper">
+
+				<div class="p-button raised blue">
+					<a href="#order-summary" class="p-btn-a">
+						<ul>
+							<li>
+								<div class="center" fit>NEXT</div>
+								<paper-ripple fit></paper-ripple>
+							</li>
+						</ul>
+					</a>
+				</div>
+
+				<div class="p-button raised red">
+					<ul>
+						<div class="center" fit>CANCEL</div>
+						<paper-ripple fit></paper-ripple>
+					</ul>
+				</div>
+			</div>
+		</form>
+	</div> <!-- close .p-form -->
+</section>  <!-- close #userForm -->
+
+<div class="spacer"></div>
+
+<section>
 	<div id="order-summary">
 		<form id="orderForm" class="p-form" action="" method="post" name="orderForm">
 			<ul>
