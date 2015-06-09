@@ -1,0 +1,249 @@
+/* =============================================================
+
+Book:         New Perspectives on HTML and CSS
+Project:      Tutorial 6 : Case Problem 4
+``````````````````````````````````````````````````````````````````
+Page:         Mill.css : CSS File - Combined
+``````````````````````````````````````````````````````````````````
+Author:       Roger Corley
+Date:         June 1, 2015
+``````````````````````````````````````````````````````````````````
+Filename:
+mill.css
+
+Supporting files:
+stop-x-red.png 
+
+================================================================== */
+
+
+*:focus 								{	outline: none;											}
+
+
+html 									{ 	font: 16px/24px "Segoe UI", sans-serif;
+											font-weight: 400;	
+											background-color: #fff;
+																										}
+
+h1, h2 								{	font-weight: 200;											}
+h3, h4 								{	font-weight: 300;											}
+
+h1 										{	font-size: 48px;  											}
+h2 										{	font-size: 36px; 											}
+h3 										{	font-size: 24px;											}
+
+::-webkit-input-placeholder 			{	color: #fff;												}
+
+:-moz-placeholder 					{ 	/* Firefox 18- */ 		color: #fff;  						}
+
+::-moz-placeholder 					{  	/* Firefox 19+ */ 		color: #fff;   						}
+
+:-ms-input-placeholder 				{	color: #fff;  												}
+
+ul 										{ 	list-style-type: none;										}
+
+a 										{ 	text-decoration: none; color: #3498db; 				}
+
+a:hover 								{ 	color: orange; 											}
+
+input 									{  	border: none;
+											font-size: 26px;
+											font-weight: 200;
+											font-family: "Segoe UI", sans-serif;
+											color: #fff;
+											width: 100%										
+																										}
+
+input:required 						{ 																}
+
+input.form-field,
+select.form-field 						{ 	font-weight: 400;
+											font-family: "Segoe UI";
+											border: 0;
+											background-color: #3498db;
+											color: #fff;
+																										}
+
+
+input.form-field 						{ 	height: 30px; 											}
+
+select.form-field 						{ 	font-size: 20px;											}
+
+input[type="reset"],
+input[type="submit"] 				{	padding: 25px; 	margin-bottom: 10px;				}
+
+
+input[type="reset"] 					{ 	background-color: #e51400; 							}
+
+input[type="submit"] 				{ 	background-color: #8cbf26; 							}
+
+input:invalid 							{ 	color: red;
+											font-weight: 600;
+											background: url('../assets/stop-x-red.png');
+											background-repeat: no-repeat;
+											background-position: bottom right;
+											background-size: contain;
+																										}
+
+
+
+select 									{ 	width: 200px; 											}
+
+select:hover 							{ 	border: 5px solid orange;
+											  margin-top: -10px;
+											  width: 480px;
+											  padding-bottom: 10px;
+																										}
+
+select:focus 							{ 	background-color: #fff; color: #3498db; 				}
+
+
+
+#options label 						{  	border: 0; background-color:  							}
+
+#options ul li input 					{	width: 20px; 												}
+
+
+
+hgroup 								{ 	text-align: center; 										}
+
+header 								{ 	background-color: #3498db;
+											border-bottom: 1px solid #1478bb;
+											height: 90px;
+											position: fixed;
+											width: 100%;
+											top: 0;
+											left: 0;
+											z-index: 50;
+																										}
+
+#outer-logo-box 						{ 	border: 5px solid #3498db;
+											width: 145px;
+											height: 120px;
+											margin: 10px;
+											float: left;
+																										}
+
+#logo 									{ 	width: 125px;
+											  height: 100px;
+											  border: 10px solid #fff;
+											  background-color: #3498db;
+											  text-align: center;
+											  float: left;
+																										}
+
+#logo-box 							{ 	margin-top: -50px; 										}
+
+#logo h1 								{ 	color: #fff;
+											font-family: 'Limelight', cursive;
+											font-size: 144px;
+																										}
+
+
+
+
+#page-name 							{ 	float: right; padding-right: 25px; 						}
+
+#page-name h1 						{ 	color: #fff; 												}
+
+
+
+#main 								{ 	clear: both;
+											top: 90px;
+											position: relative;
+																										}
+
+
+
+#form-wrapper 						{ 	width: 960px; margin: 0 auto; 							}
+
+form 									{ 	width: 960px; margin: 0 auto; 							}
+
+.form-box 								{ 	border: 20px solid #3498db;
+											width: 540px;
+											margin: 20px auto 1920px;
+																										}
+
+.form-column 							{ 	width: 500px;
+											clear: left;
+											margin: 0 auto;
+																										}
+
+.form-input 							{ 	padding-left: 0; 											}
+
+.form-input input 						{ 	width: 100%; 												}
+
+.form-input input:hover 				{ 	border: 2px solid orange; 								}
+
+.form-input input:focus 				{	background-color: #fff; color: #3498db; 				}
+
+.form-input ul 							{	padding-left: 0; 											}
+
+.form-column ul li 					{ 	font-size: 20px;
+											font-weight: 400;
+											font-family: "Segoe UI";
+											margin: 2px 0;
+											padding: 10px;
+											border: 0;
+											background-color: #3498db;
+											color: #fff;
+											height: 30px;
+																										}
+
+.form-column ul li select 			{ 	width: 480px; 											}
+
+
+
+label 									{ 	display: inline; 											}
+
+label.hidden 							{ 	display: none; 											}
+
+
+
+
+
+.checkbox 							{ 	display: inline; 	float: right; 							}
+
+
+
+
+#comments 							{ 	height: 96%;
+											width: 96%;
+											border: none;
+											font-family: "Segoe UI", sans-serif;
+											font-size: 14px;
+											padding: 10px;
+																										}
+
+#comments ul 						{ 	height: 400px; 											}
+
+
+
+#text-comments						{ 	border: none;
+											width: 100%;
+											height: 100%;
+											font-family: "segoe ui", sans-serif;
+											font-size: 1.5em;
+											color: #3498db;
+																										}
+
+
+
+
+.next 									{ 	font-size: 22px; 	margin-top: -10px; 					}
+
+.next ul 								{ 	padding: 0 0 15px 30px; 	margin: 0; 				}
+
+.spacer 								{ 	height: 80px; 											}
+
+
+
+
+.button-wrapper 						{ 	width: 960px; 	height: 300px; 						}
+
+li.button-item 							{ 	width: 220px;
+											height: 75px;
+											padding-bottom: 10px;
+											margin: 0 auto;
+											margin-bottom: 10px;
+																										}
