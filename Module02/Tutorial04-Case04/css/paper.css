@@ -17,6 +17,10 @@ body {
 	background-attachment: fixed;
 }
 
+h1, h2, h3, h4, h5, h6 {
+		
+}
+
 h1 {
 	font-size: 48px;
 	font-weight: 300
@@ -30,6 +34,10 @@ h2 {
 h3 {
 	font-size: 24px;
 	font-weight: 300;
+}
+
+h4 {
+	
 }
 
 a {
