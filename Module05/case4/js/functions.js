@@ -1,18 +1,27 @@
-/*
-   New Perspectives on HTML and CSS
-   Tutorial 10
-   Case Problem 4
+/* =============================================================
 
-   Function List:
-   showDate
-      Used to display the date in the form "Weekday, Month Day, Year"
+Book:         New Perspectives on HTML and CSS
+Project:      Tutorial 10 : Case Problem 4
+``````````````````````````````````````````````````````````````````
+Author:       Roger Corley
+Date:         June 6, 2015
+``````````````````````````````````````````````````````````````````
+Filename:
+functions.js
 
-   dayNumber
-      Used to calculate the day number (1 - 366) of a given date
+Functions List:
 
-   showBirthDay
-      Used to display a famous birthday falling on a given date
-*/
+showDate()
+-- Used to display the date in the form "Weekday, Month Day, Year"
+
+dayNumber()
+-- Used to calculate the day number (1 - 366) of a given date
+
+showBirthday()
+-- Used to display a famous birthday falling on a given date
+
+================================================================== */
+
 
 var births = new Array();
    births[1] = "J.D. Salinger (1919) - Author";

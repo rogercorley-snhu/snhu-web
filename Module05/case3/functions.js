@@ -1,33 +1,62 @@
-/*
-   New Perspectives on HTML and CSS
-   Tutorial 10
-   Case Problem 3
-   Filename: functions.js
 
-   This file contains functions used in the today.htm file.
 
-   The showDate function displays the date in the format: "Weekday, Month Day, Year"
-   The weekDay function displays the weekday name
+/* =============================================================
 
-*/
+Book:           New Perspectives on HTML and CSS
+Project:        Tutorial 10 : Case Problem 3
+``````````````````````````````````````````````````````````````````
+Filename:       functions.js
+``````````````````````````````````````````````````````````````````
+Author:         Roger Corley
+Date:           June 5, 2015
+``````````````````````````````````````````````````````````````````
+Description:
 
-function showDate() {
-   thisDate = new Date();
-   var thisWDay=thisDate.getDay();
-   var thisDay=thisDate.getDate();
-   var thisMonth=thisDate.getMonth();
-   var thisYear=thisDate.getFullYear();
-   var mName = new Array("January", "February", "March", "April", "May", 
-       "June", "July", "August", "September", "October","November", "December");
-   var wdName = new Array("Sunday", "Monday", "Tuesday", "Wednesday",
-       "Thursday", "Friday", "Saturday");
-   return wdName[thisWDay]+", "+mName[thisMonth]+" "+thisDay+", "+thisYear;
+This file contains functions used in the today.htm file.
+
+The GetDate function displays the date in "Weekday, Month Day, Year" format.
+The GetWeekDay function displays the weekday name.
+
+================================================================== */
+
+
+function GetDate() {
+
+    var rightNow;
+
+    var months = [ 'January','February','March','April','May',
+        'June','July','August','September','October',
+        'November','December' ];
+
+    var days = [ 'Sunday','Monday','Tuesday','Wednesday',
+        'Thursday','Friday','Saturday' ];
+
+    var date = new Date();
+
+    var today = date.getDay();
+    var day = date.getDate();
+    var month = date.getMonth();
+    var year = date.getFullYear();
+
+    rightNow = days[today] + ", " + months[month] + " " + day + " " + year;
+
+    return rightNow
+
 }
 
-function weekDay(){
-   thisDate = new Date();
-   var thisWDay=thisDate.getDay();
-   var wdName = new Array("sunday", "monday", "tuesday", "wednesday",
-       "thursday", "friday", "saturday");
-   return wdName[thisWDay];
+
+function GetWeekDay() {
+
+    var weekday;
+
+    var days = [ 'Sunday','Monday','Tuesday','Wednesday',
+        'Thursday','Friday','Saturday' ];
+
+    var day = new Date().getDay();
+
+    weekday = days[day];
+
+    return weekday
+
 }
+
