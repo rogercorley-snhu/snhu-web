@@ -1,0 +1,20 @@
+6-3 Homework: Using Array Methods and Event Handlers to Populate Forms
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+In this assignment you need to create an HTML page that meets the following requirements.
+ The theme and content of the page can be of your choice. (Refer to Tutorial 13)
+
+--Create an HTML form.
+--Create and Initialize three arrays.
+--Use for-loops to populate those arrays.
+--Add an element to the end of one array.
+--Remove an element from the end of another array.
+--Add a new element to the beginning of one array.
+--Add at least one additional array method of your choice.
+--Convert an array to a string.
+--Use the converted string, assign to a string variable, and use it to populate a form field.
+--Create different functions to handle the operations of steps 4, 5, 6, and 7. (You can create additional array methods.)
+--Create four or more buttons on the form with different event handlers to start the above functions upon clicking them.
+--Create an additional button with an event handler to complete the operation in step 10.
+
+For additional details, refer to the IT 270 Assignments Rubric document in the Assignment Guidelines and Rubrics section of the course.
