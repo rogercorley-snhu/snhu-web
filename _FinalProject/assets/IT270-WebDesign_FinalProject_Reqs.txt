@@ -1,0 +1,28 @@
+**Main Elements**
+
+1. The website includes tables.
+1. The website includes at least one form.
+1. The website includes at least one form with JavaScript validation. 
+1. The website includes the use of CSS stylesheets, three different ways: external, internal, and inline.
+1. The website should include at least one form of multimedia (audio or video).
+1. At least one JavaScript event.
+1. In addition, the website should contain as many of the tags and features learned in this course as possible. You need to at least use:
+1.1. Bold
+1.1. Italic
+1.1. Unordered lists
+1.1. Ordered Lists
+1.1. Hyperlink to an external page
+1.1. Hyperlink to another part of the same page
+1.1. At least one horizontal rule
+1.1. Different font color, font size, etc.
+1.1. Include an image
+1.1. Footer
+
+In addition to the above requirements, the website needs to be clean and professional looking.  
+
+**Format** 
+
+-- The website must include at least 5 pages
+-- The website must be hosted on the internet (Google Sites is a free tool to use for this). 
+-- The site must be built with HTML and not any WYSIWYG (like Dreamweaver) or website template.
+-- Use CSS stylesheets to enhance the structure and the look of the website.
