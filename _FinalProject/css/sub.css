@@ -1,0 +1,70 @@
+header {
+  background-color:#180a0b;
+  background-image:url('../images/background-jackson.jpg');
+  background-position:bottom center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+header article {
+  text-align:center;
+}
+
+header article h2 {
+  font-family:'Droid Serif';
+  color:#fff;
+  font-size:3.5em;
+  margin:0.5em 0 0;
+}
+
+header article nav ul {
+  text-align:center;
+}
+
+header article nav ul li {
+  display:inline-block;
+}
+
+header article nav ul li a {
+  display:block;
+  border:solid 1px rgba(33,198,213,0.6);
+  color:#fff;
+  font-family:'Montserrat';
+  font-size:0.625em;
+  text-transform:uppercase;
+  padding:1.5em 25px;
+  margin:3em 5px 5em;
+  letter-spacing:0.25em;
+  transition:background-color 200ms;
+}
+
+header article nav ul li a:hover, header article nav ul li a.nav-path-selected {
+  border:solid 1px rgba(227,88,56,0.6);
+}
+
+#main {
+  padding:3em 0;
+}
+
+@media only screen and (max-width: 900px) {
+
+  header article nav ul {
+    margin:1.5em 0;
+  }
+
+  header article nav ul li {
+    display:block;
+  }
+
+  header article nav ul li a {
+    margin:0.5em 5px;
+    display:block;
+  }
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+}

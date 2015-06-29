@@ -1,0 +1,145 @@
+body {
+  font-family:'Droid Serif';
+  color:#444;
+}
+
+#main a {
+  color:#e35838;
+  transition:color 300ms;
+}
+
+#main a:hover {
+  color:#3f8084;
+}
+
+#main h1 {
+  font-size:2.5em;
+  text-align:center;
+  line-height:1.25em;
+}
+
+#main h2 {
+  color:#e35838;
+  font-family:'Montserrat';
+  text-transform:uppercase;
+  letter-spacing:0.1em;
+  margin:2.5em 0 1em;
+  font-size:1.25em;
+  line-height:1.5em;
+}
+
+#main h3 {
+  font-family:'Montserrat';
+  font-size:1em;
+  text-transform:uppercase;
+  letter-spacing:0.1em;
+  color:#3f8084
+}
+
+#main h4 {
+  font-size:2em;
+  text-align:center;
+  margin:0.5em 0;
+  line-height:1.5em;
+}
+
+#main p {
+  font-size:1.125em;
+  line-height:1.75em;
+  margin:1.5em 0;
+}
+
+#main ul {
+  list-style-type:disc;
+  margin:1.5em 0;
+}
+
+#main ul li {
+  margin:0.5em 0 0.5em 4em;
+  font-size:1.125em;
+  line-height:1.75em;
+}
+
+#main ol {
+  list-style-type:decimal;
+  margin:1.5em 0;
+}
+
+#main ol li {
+  margin:0.5em 0 0.5em 4em;
+  font-size:1.125em;
+  line-height:1.75em;
+}
+
+#main time {
+  text-align:center;
+  display:block;
+  font-family:'Montserrat';
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  font-size:0.75em;
+  margin:2em 0;
+  color:#3f8084;
+}
+
+#main em {
+  font-style:italic;
+}
+
+#main strong {
+  font-weight:700;
+}
+
+#main hr {
+  height:1px;
+  border:0;
+  border-bottom:solid 1px #e35838;
+  margin:2em 0 1em;
+}
+
+#main .ccm-page-list {
+  margin:2em 0;
+}
+
+#main .ccm-page-list a {
+  display:block;
+  color:#444444;
+  border-bottom:solid 1px #e35838;
+  padding:0 0 0.75em;
+}
+
+#main .ccm-page-list p {
+  font-style:italic;
+  font-size:1.25em;
+}
+
+#main .center {
+  text-align:center;
+}
+
+#main .button a {
+  display:inline-block;
+  font-family:'Montserrat';
+  text-transform:uppercase;
+  outline:0;
+  border:0;
+  border-radius:0.25em;
+  padding:0.75em 1em;
+  margin:1em 0;
+  background-color:rgba(33,198,213,0.4);
+  color:#fff;
+  transition:background-color 250ms;
+  font-size:0.875em;
+}
+
+#main .button a:hover {
+  background-color:#21c6d5;
+}
+
+@media only screen and (max-width: 900px) {
+
+  #main {
+    font-size:0.75em;
+  }
+
+}

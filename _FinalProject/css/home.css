@@ -1,0 +1,342 @@
+
+header {
+	background-image:url('../assets/background-unemployed-bunny.jpg');
+	background-position: center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	height: 651px;
+	border-bottom: solid 4px #EB4F4F;
+	border-right:none;
+}
+
+header article {
+/*	float:left;
+	width:50%;
+	margin:6em 0 ;*/
+
+	float:right;
+	width:50%;
+	margin 0;
+}
+
+header article h3 {
+	font-family:'Droid Serif';
+	color:#fff;
+	font-size:2.125em;
+	line-height:1.375em;
+	background-color: rgba(0,0,0,0.5);
+	padding: .5em;
+	font-size: 2em;
+	border:solid 4px #EB4F4F;
+	border-right:none;
+}
+
+header article p {
+	color:#eb4f4f;
+	color:rgba(235,79,79,0.75);
+	font-style:italic;
+	font-size:0.875em;
+	line-height:2em;
+	font-family:'Droid Serif';
+	margin:1.5em 0;
+}
+
+header article ul {
+	margin-top: 2em;
+	float: right;
+}
+
+header article ul li {
+	display:inline-block;
+}
+
+header article ul li a {
+	display:block;
+	border:solid 4px #eb4f4f;
+	font-family:'Montserrat';
+	text-transform:uppercase;
+	color:#fff;
+	padding:1.5em 2.5em;
+	font-size:0.75em;
+	letter-spacing:0.25em;
+	margin:0 2em 0 0;
+	transition:background-color 200ms;
+	background-color:rgba(0,0,0,0.5);
+}
+
+header article ul li a:hover {
+	background-color:#4febd7;
+	background-color:rgba(79,235,215,0.4);
+}
+
+.what-we-do {
+	text-align:center;
+	padding:6em 0 8em 0;
+/*	border-top:solid 4px #ff0000;*/
+}
+
+.what-we-do h2 {
+	font-family:'Montserrat';
+	font-size:1.5em;
+	color:#444;
+	text-align:center;
+	margin:0 0 4em;
+	text-transform:uppercase;
+	letter-spacing:0.25em;
+}
+
+.what-we-do i {
+	display:inline-block;
+	background-image:url('../assets/icons-home.png');
+	height:0;
+	padding-top:56px;
+	width:56px;
+	overflow:hidden;
+}
+
+.what-we-do i.design {
+}
+
+.what-we-do i.development {
+	background-position:-56px 0;
+}
+
+.what-we-do i.apps {
+	background-position:-112px 0;
+}
+
+.what-we-do h3 {
+	font-family:'Montserrat';
+	font-size:1.375em;
+	color:#444;
+	letter-spacing:0.25em;
+	text-transform:uppercase;
+	margin:1em 0;
+}
+
+.what-we-do p {
+	font-family:'Droid Serif';
+	font-style:italic;
+	font-size:1.125em;
+	margin:1em 5%;
+	line-height:2em;
+	color:#555;
+}
+
+.what-ive-done {
+	background-color:#151515;
+	padding:6em 0 10em 0;
+	position:relative;
+}
+
+.what-ive-done h2 {
+	font-family:'Montserrat';
+	font-size:1.5em;
+	color:#fff;
+	text-align:center;
+	margin:0 0 4em;
+	text-transform:uppercase;
+	letter-spacing:0.25em;
+}
+
+.what-ive-done .macbook {
+	width:50%;
+	float:left;
+	background-image:url('../images/portfolio-mac.png');
+	background-size:100% auto;
+	text-align:center;
+	padding:1.5em 0;
+	background-repeat:no-repeat;
+}
+
+.what-ive-done .macbook img {
+	width:75%;
+	border:solid 1px #000;
+	margin:0 0 3em 0;
+}
+
+.what-ive-done .portfolio {
+	width:45%;
+	float:right;
+}
+
+.what-ive-done .portfolio {
+	margin:2em 0;
+}
+
+.what-ive-done .portfolio h3 {
+	font-family:'Montserrat';
+	color:#eb4f4f;
+	text-transform:uppercase;
+	letter-spacing:0.25em;
+	font-size:1.125em;
+}
+
+.what-ive-done .portfolio p {
+	color:#fff;
+	font-style:italic;
+	line-height:2em;
+	margin:1.5em 0;
+}
+
+.what-ive-done .portfolio a {
+	display:inline-block;
+	border:solid 1px #4febd7;
+	border:solid 1px rgba(79,235,215,0.4);
+	font-family:'Montserrat';
+	text-transform:uppercase;
+	color:#fff;
+	padding:1.5em 2.5em;
+	font-size:0.75em;
+	letter-spacing:0.25em;
+	margin:0 2em 0 0;
+	transition:background-color 200ms;
+}
+
+.what-ive-done .portfolio a:hover {
+	background-color:#4febd7;
+	background-color:rgba(79,235,215,0.4);
+}
+
+.what-ive-done .arrow {
+	display:block;
+	width:80px;
+	height:0;
+	padding-top:100px;
+	background-image:url('../images/arrows.png');
+	overflow:hidden;
+	position:absolute;
+}
+
+.what-ive-done .arrow.prev {
+	background-position:0 0;
+	top:50%;
+	left:0;
+}
+
+.what-ive-done .arrow.prev:hover {
+	background-position:0 -100px;
+}
+
+.what-ive-done .arrow.next {
+	background-position:-80px 0;
+	top:50%;
+	right:0;
+}
+
+.what-ive-done .arrow.next:hover {
+	background-position:-80px -100px;
+}
+
+.what-ive-done .view-portfolio {
+	display:none;
+}
+
+@media only screen and (max-width: 900px) {
+
+	header article {
+		margin:1em 4%;
+		float:none;
+		text-align:center;
+		width:auto;
+	}
+
+	header article h3 {
+		font-size:1.25em;
+		line-height:1.75em;
+		border: solid 4px #EB4F4F;
+	}
+
+	header article ul {
+		float:none;
+	/*	margin:0;*/
+	}
+
+	header article ul li a {
+		font-size:0.5em;
+		padding:1.5em 1.5em;
+	}
+
+	.what-we-do {
+		padding:4em 0 2em 0;
+	}
+
+	.what-we-do h2 {
+		font-size:1.25em;
+		margin:0 0 2em;
+	}
+
+	.what-we-do p {
+		margin:1em 0 3em;
+	}
+
+	.what-ive-done {
+		display:none;
+	}
+
+	.what-ive-done .cycle-slideshow {
+		display:none;
+	}
+
+	.what-ive-done .view-portfolio {
+		display:block;
+		text-align:center;
+	}
+
+	.what-ive-done .view-portfolio a {
+		display:inline-block;
+		border:solid 1px #4febd7;
+		border:solid 1px rgba(79,235,215,0.4);
+		font-family:'Montserrat';
+		text-transform:uppercase;
+		color:#fff;
+		padding:1.5em 2.5em;
+		font-size:0.75em;
+		letter-spacing:0.25em;
+		margin:0 2em 0 0;
+		transition:background-color 200ms;
+	}
+
+	.what-ive-done .view-portfolio a:hover {
+		background-color:#4febd7;
+		background-color:rgba(79,235,215,0.4);
+	}
+
+	.contact h4 {
+		text-align:center;
+		font-size:1.125em;
+		line-height:2em;
+	}
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+	header {
+/*		background-size:1600px auto;*/
+		background-color:transparent;
+		background-position:right 65%;
+	}
+
+	header article h3 {
+		min-width:425px;
+		max-width:650px;
+		float:right;
+	}
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+	.what-we-do i {
+		background-image:url('../images/icons-home@2x.png');
+		background-size:168px 56px;
+	}
+
+}

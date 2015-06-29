@@ -1,0 +1,48 @@
+.span-1 {
+  float:left;
+  width:13.666666666667%;
+  margin:1em 1.5%;
+  font-size:0.75em;
+}
+
+.span-2 {
+  float:left;
+  width:30.333333333333%;
+  margin:1em 1.5%;
+  font-size:0.825em;
+}
+
+.span-3 {
+  float:left;
+  width:47%;
+  margin:1em 1.5%;
+  font-size:0.875em;
+}
+
+.span-4 {
+  float:left;
+  width:63.666666666667%;
+  margin:1em 1.5%;
+  font-size:0.925em;
+}
+
+.span-5 {
+  float:left;
+  width:80.333333333333%;
+  margin:1em 1.5%;
+  font-size:1em;
+}
+
+.span-6 {
+  float:none;
+  width:100%;
+}
+
+@media screen and (max-width:800px) {
+
+  .span-1, .span-2, .span-3, .span-4, .span-5, .span-6 {
+    float:none;
+    width:auto;
+  }
+
+}
