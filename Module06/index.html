@@ -23,12 +23,12 @@
 
 <!--  CSS :  Local Links
 ====================================================== -->
-	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/main.css">
 
 
 <!--  Javascript :  Local Links
 ====================================================== -->
-	<script src="js/scriptlibrary.js"></script>
+	<script src="js/js-lib.js"></script>
 	<script src="js/modernizr-1.5.js"></script>
 
 
@@ -47,11 +47,24 @@
 
 
 	<div id="wrapper">
+		<section>
+			<h4>Favorite Musicians</h4>
+			<ul>
+				<li class="paul-mccartney">Paul McCartney</li>
+				<li class="john-lennon">John Lennon</li>
+				<li class="stevie-wonder">Stevie Wonder</li>
+				<li class="jeff-lynne">Jeff Lynne</li>
+			</ul>
+		</section>
 
-		<form action="" id="todo">
+		<section>
+			<form action="" class="p-form">
+				<label for="musician">Enter Name</label>
+				<input type="musician" id="musician">
 
-
-		</form>
+				<button>Add To List</button>
+			</form>
+		</section>
 
 	</div>
 
@@ -68,7 +81,15 @@
 <!--  jQuery : Site Scripts
 ====================================================== -->
 
-
+<script type='text/javascript'>
+	$(document).ready (
+		function() {
+			$('li').filter(
+				function() {
+					return $(this).hasClass('John') || $(this).hasClass('Paul');
+				}).addClass('tmpSelected');
+		});
+</script>
 
 
 </body>
