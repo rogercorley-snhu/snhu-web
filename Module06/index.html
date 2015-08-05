@@ -18,24 +18,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-	<title>Page Title</title>
+	<title>Coding : toDo</title>
 
 
 <!--  CSS :  Local Links
 ====================================================== -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.css">
 
 
 <!--  Javascript :  Local Links
 ====================================================== -->
-	<script src="js/js-lib.js"></script>
 	<script src="js/modernizr-1.5.js"></script>
+	<script src="js/jquery.inlineedit.js"></script> 
+<!--	<script src="js/base.js"></script>  -->
 
 
 <!--  jQuery : CDN Version Link
 ====================================================== -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 </head>
 
@@ -46,27 +48,16 @@
 	</header>
 
 
-	<div id="wrapper">
-		<section>
-			<h4>Favorite Musicians</h4>
-			<ul>
-				<li class="paul-mccartney">Paul McCartney</li>
-				<li class="john-lennon">John Lennon</li>
-				<li class="stevie-wonder">Stevie Wonder</li>
-				<li class="jeff-lynne">Jeff Lynne</li>
-			</ul>
-		</section>
-
-		<section>
-			<form action="" class="p-form">
-				<label for="musician">Enter Name</label>
-				<input type="musician" id="musician">
-
-				<button>Add To List</button>
-			</form>
-		</section>
-
-	</div>
+    <div id="container">
+        <h1>Coding : toDo</h1>
+        <form id="todo-form">
+            <input id="todo" type="text" />
+            <input id="submit" type="submit" value="Add to List">
+            <input id="remove" type="button" value="Remove from List">
+        </form>
+        <ul id="show-items"></ul>
+        <a href="#" id="clear-all">Clear All</a>
+    </div>
 
 
 
@@ -75,20 +66,66 @@
 <!--  javascript : Site Scripts
 ====================================================== -->
 
+<script type="text/javascript">
+	var data = [ 'X' ];
 
+	data.push( 'A' );
+	data.push( 'B', 'C' );
+
+	console.log( data );
+
+
+</script>
 
 
 <!--  jQuery : Site Scripts
 ====================================================== -->
 
 <script type='text/javascript'>
-	$(document).ready (
-		function() {
-			$('li').filter(
-				function() {
-					return $(this).hasClass('John') || $(this).hasClass('Paul');
-				}).addClass('tmpSelected');
+
+$(document).ready(function() {
+
+	var todoList = 	[];
+
+	todoList[0] = 'Roger';
+	todoList[1] = 'Maria';
+
+	$('input#submit').click(function($e) {
+		$e.preventDefault();
+
+		var $item = $('#todo').val();
+		alert($item);
+		var $push = $(todoList).push($item);
+		var $pItem = todoList[$push];
+
+		alert('pushed: ' + $push);
+		alert(todoList[$pItem]);
+		alert($pItem);
+	});
+
+	$('input#button').click(function($e) {
+		$e.preventDefault();
+
+		var $item = $('#todo').val();
+		alert($item)
+		var rmItem = $item;
+		todoList.splice($.inArray(rmItem, todoList),1);
+	});
+
+
+	var $i = 0;
+
+	var $mapped = $(todoList).map(function() {
+		$i++;
+		return this;
+	});
+
+		$($mapped).each(function() {
+			$('#show-items').append('<li>' + this + '</li>\n');
 		});
+
+});
+
 </script>
 
 
