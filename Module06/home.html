@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+
+			<meta charset="UTF-8" />
+
+
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+
+<!--  Page Info
+====================================================== -->
+
+<meta name="description" content="Page Description" />
+<meta name="author" content="Roger Corley" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Time Tracker : Case Logs</title>
+
+
+<!--  CSS :  Local Links
+====================================================== -->
+
+<link rel="stylesheet" href="css/base.css"  />
+
+
+<!--  CSS :  Local Links
+====================================================== -->
+<script src="js/modernizr-1.5.js"></script>
+<!-- <script src="js/base.js"></script> -->
+
+<!--  jQuery : CDN Version Link
+====================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+ <body>
+	<form name="timeTracker" id="timetracker">
+
+		 <header>
+			<div id="logo"><h1>Time Tracker</h1></div>
+		 </header>
+
+		<section id="caseHistory">
+			 <h2>Time Tracker</h2>
+			 <textarea id="timeList" name="timeList"></textarea>
+		</section>
+
+		<section id="caseEntry">
+			<div class="caseWrapper">
+				 <h2>Case Information</h2>
+
+				 <table id="caseTracker">
+						<tr>
+							<th><h3>Case ID:</h3></th>
+							<td  class="dataWrapper"><input id="textCaseID"></h3></td>
+						</tr>
+						<tr>
+							<th><h3>Last Update:</h3></th>
+							 <td  class="dataWrapper"><h3 id="lastUpdate"></h3></td>
+						</tr>
+						<tr>
+							<th><h3>Due Date/Time:</h3></th>
+							 <td  class="dataWrapper"><h3></h3></td>
+						</tr>
+				 </table>
+			 </div>
+			<div class="caseWrapper" >
+			 	<h2>Case Updates</h2>
+				 <table id="newCase">
+						<tr>
+							<th><h3>Case ID:</h3></th>
+							 <td>
+									<input id="caseID" class="dataWrapper" name="caseID" type='text'/>
+							 </td>
+						</tr>
+						<tr>
+							<th><h3>Case Notes:</h3></th>
+							 <td>
+									<textarea id="caseNotes" class="dataWrapper" name="caseNotes"></textarea>
+							 </td>
+						</tr>
+						<tr>
+							 <th id="btns" colspan="2">
+									<input type="button" id="addUpdate" value="Submit" />
+									<input type="button" id="delUpdate" value="Undo"  />
+							 </th>
+						</tr>
+				 </table>
+			</div>
+
+		</section>
+
+
+	 </form>
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	$( "input#addUpdate" ).click(function( $e ) {
+		$e.preventDefault();
+
+		var $id = $('#caseID').val();
+		var $notes = $( '#caseNotes' ).val();
+		var $ts = timestamp();
+
+		var $log = ' ' + $id + ' : ' + $ts + '\n' + '---- ' + $notes + ' ';
+
+		alert($log);
+
+		cases.unshift( $id );
+		updates.unshift( $notes );
+		updateStamp.unshift( $ts );
+
+		commitUpdates($log);
+
+	});
+
+	var updates = new Array();
+	var cases = new Array();
+	var updateStamp = new Array();
+
+	function timestamp() {
+
+		var stamp = new Date();
+		var hours = stamp.getHours();
+		var minutes = stamp.getMinutes();
+		var seconds = stamp.getSeconds();
+
+		minutes = minutes < 10 ? "0"+minutes : minutes;
+		seconds = seconds < 10 ? "0"+seconds : seconds;
+
+		var ts = " "+hours+":"+minutes+":"+seconds+" ";
+
+		return ts;
+	}
+
+	function addUpdate(cid, cno) {
+
+	 cases.unshift( cid );
+	 updates.unshift( cno );
+
+
+
+	 commitUpdates(cid, cno, ts);
+
+	}
+
+	function delUpdate() {
+	 cases.shift();
+	 updates.shift();
+	 updateStamp.shift();
+
+	 commitUpdates();
+	}
+
+
+	function commitUpdates(log) {
+	 var uList = new Array();
+
+	 var $tl = $( '#timeList' ).val();
+	 var $lu = $( '#lastUpdate' ).val();
+
+	 var $tring = $( '#textCaseID' ) +" : "+updateStamp[i] +" \n\t"+updates[i] +"\n"
+
+
+	 for (var i = 0; i < updates.length; i++) {
+		uList += $tring;
+		updates.push(uList[i]);
+	 }
+
+	 alert(updates[i]);
+
+	 uList = $( '#timeList' ).val();
+	 updates[0] = $( '#lastUpdate' ).value = updates[0];
+
+	 $( '#caseID' ).closet('form').find('input [type=text], textarea').val('');
+
+	}
+
+});
+
+</script>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+</body>
+
+</html>

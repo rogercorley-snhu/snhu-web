@@ -1,0 +1,168 @@
+/*  CSS Resets - Eric Meyer - Minimized
+------------------------------------------------------------------ */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+/*  Begin Page Styles
+------------------------------------------------------------------ */
+
+body {
+   font-family: "Segoe UI";
+   max-width: 1200px;
+   min-width: 500px;
+   height: auto;
+   margin: 20px auto;
+}
+
+h1, h2, h3 {
+   font-weight: 200;
+}
+h1 {
+   font-size: 3.0em;
+}
+
+h2 {
+   font-size: 2.5em;
+}
+
+h3 {
+   font-size: 1.2em;
+   font-weight: 400;
+   text-align: left;
+}
+
+form {
+   min-width: 800px;
+   height: 800px;
+   border: 2px solid #AAA;
+   padding: 30px;
+   -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+                   border-radius: 10px;
+}
+
+header {
+   width: 100%;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   height: auto;
+   color: #fff;
+   background-color: #01579b;
+   border: 2px solid #424242;
+   -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+                border-radius: 10px;
+}
+
+#logo {
+   width: 100%;
+   height: 100px;
+   overflow: hidden;
+}
+
+#logo h1 {
+   margin: 0 auto;
+   font-size: 4.0em;
+   padding: 10px 0;
+   text-align: center;
+}
+
+.caseWrapper {
+   clear: left;
+   float: left;
+   width: 50%;
+   margin: 10px 10px 30px 10px ;
+   padding-bottom: 10px;
+   text-align: left;
+}
+
+.caseWrapper h2,
+#caseHistory h2 {
+   border-bottom: 1px solid #01579b;
+   margin-bottom: 20px;
+   padding-bottom: 10px;
+}
+
+#caseHistory {
+   float: right;
+   width: 40%;
+   margin: 10px 10px 30px 10px ;
+   padding-bottom: 10px;
+   text-align: left;
+}
+
+#caseID {
+    width: 99%;
+    height: 30px;
+}
+
+#caseNotes {
+   width: 98%;
+   height: 190px;
+}
+
+table {
+    width: 100%;
+}
+
+tbody {
+    width: 98%;
+    min-width: 250px;
+}
+
+th, td {
+   vertical-align: top;
+}
+
+th {
+    text-align: left;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    width: 160px;
+    margin-right: 10px;
+}
+
+th h3 {
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+tr {
+    width: 100%;
+    height: 30px;
+}
+
+td.dataWrapper {
+   border: 1px solid rgb(169, 169, 169);
+   width: 70%;
+   vertical-align: middle;
+   text-align: left;
+}
+
+textarea#timeList {
+   width: 98%;
+   height: 450px;
+}
+
+#addUpdate,
+#delUpdate {
+    margin: 50px 30px 0 0;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+#addUpdate {
+       background-color: #4caf50;
+}
+
+#delUpdate {
+    background-color: #E91E63;
+}
