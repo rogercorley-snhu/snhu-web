@@ -46,6 +46,7 @@
 </head>
 
  <body>
+ <div id="formWrapper">
 	<form name="timeTracker" id="timetracker">
 
 		 <header>
@@ -53,85 +54,88 @@
 		 </header>
 
 		<section id="caseHistory">
-			 <h2>Time Tracker</h2>
-			 <textarea id="timeList" name="timeList"></textarea>
+			 <div class="boxTitle">Time Tracker</div>
+
+			 <div id="timeList">
+				<ul id="tList">
+					
+				</ul>
+			 </div>
 		</section>
 
 		<section id="caseEntry">
 			<div class="caseWrapper">
-				 <h2>Case Information</h2>
+				 <div class="boxTitle">Case Information</div>
 
-				 <table id="caseTracker">
-						<tr>
-							<th><h3>Case ID:</h3></th>
-							<td  class="dataWrapper"><input id="textCaseID"></h3></td>
-						</tr>
-						<tr>
-							<th><h3>Last Update:</h3></th>
-							 <td  class="dataWrapper"><h3 id="lastUpdate"></h3></td>
-						</tr>
-						<tr>
-							<th><h3>Due Date/Time:</h3></th>
-							 <td  class="dataWrapper"><h3></h3></td>
-						</tr>
-				 </table>
+				 <div id="caseTracker">
+					<div class="boxCase">
+						<div class='labels'>Case ID:</div>
+						<div  class="dataWrapper" id="textCaseID"></div>
+					</div>
+						
+					<div class="boxCase">
+						<div class='labels'>Last Update:</div>
+						 <div  class="dataWrapper"  id="lastUpdate"></div>
+					</div>
+				 </div>
 			 </div>
 			<div class="caseWrapper" >
-			 	<h2>Case Updates</h2>
-				 <table id="newCase">
-						<tr>
-							<th><h3>Case ID:</h3></th>
-							 <td>
-									<input id="caseID" class="dataWrapper" name="caseID" type='text'/>
-							 </td>
-						</tr>
-						<tr>
-							<th><h3>Case Notes:</h3></th>
-							 <td>
-									<textarea id="caseNotes" class="dataWrapper" name="caseNotes"></textarea>
-							 </td>
-						</tr>
-						<tr>
-							 <th id="btns" colspan="2">
+				<div class="boxTitle">Case Updates</div>
+
+				 <div id="newCase">
+				 	<div class="boxCase">
+						<div class='labels'>Case ID:</div>
+						<input id="caseID"  name="caseID" type='text' class="dataWrapper" />
+					</div>
+
+					<div class="boxCase">
+						<div class='labels'>Case Notes:</div>
+						 <textarea id="caseNotes" class="dataWrapper" name="caseNotes"></textarea>
+
+					</div>
+						<div>
+							 <div id="btns" colspan="2">
 									<input type="button" id="addUpdate" value="Submit" />
 									<input type="button" id="delUpdate" value="Undo"  />
-							 </th>
-						</tr>
-				 </table>
+							 </div>
+						</div>
+				 </div>
 			</div>
 
 		</section>
 
-
 	 </form>
+
+	 </div>
 
 
 <script type="text/javascript">
 
 $(document).ready(function() {
 
+
+
 	$( "input#addUpdate" ).click(function( $e ) {
 		$e.preventDefault();
 
-		var $id = $('#caseID').val();
-		var $notes = $( '#caseNotes' ).val();
-		var $ts = timestamp();
+		var cases = new Array();
+		var notes = new Array();
+		var updates = new Array();
 
-		var $log = ' ' + $id + ' : ' + $ts + '\n' + '---- ' + $notes + ' ';
+		var idUpdates = $('#caseID').val();
+		var notesUpdates = $('#caseNotes').val();
 
-		alert($log);
+		cases.unshift(idUpdates);
+		notes.unshift(notesUpdates);
+		// updates.unshift(timestamp());
 
-		cases.unshift( $id );
-		updates.unshift( $notes );
-		updateStamp.unshift( $ts );
+		for (i=0; i<cases.length; i++) {
+			$('#timeList').append('<li>' + idUpdates[i] + ' : ' + timestamp() + '</li>\n')
+		}
 
-		commitUpdates($log);
+		// var $log = ' ' + $id + ' : ' + $ts + '\n' + '---- ' + $notes + ' ';
 
 	});
-
-	var updates = new Array();
-	var cases = new Array();
-	var updateStamp = new Array();
 
 	function timestamp() {
 
@@ -148,17 +152,6 @@ $(document).ready(function() {
 		return ts;
 	}
 
-	function addUpdate(cid, cno) {
-
-	 cases.unshift( cid );
-	 updates.unshift( cno );
-
-
-
-	 commitUpdates(cid, cno, ts);
-
-	}
-
 	function delUpdate() {
 	 cases.shift();
 	 updates.shift();
@@ -167,9 +160,17 @@ $(document).ready(function() {
 	 commitUpdates();
 	}
 
+	function history() {
+		var history = new Array();
+
+		var arr = $("li").map(function() { return $(this).text() }).get();
+
+		return arr;
+	}
 
 	function commitUpdates(log) {
-	 var uList = new Array();
+	 var uList = history();
+
 
 	 var $tl = $( '#timeList' ).val();
 	 var $lu = $( '#lastUpdate' ).val();
@@ -182,12 +183,9 @@ $(document).ready(function() {
 		updates.push(uList[i]);
 	 }
 
-	 alert(updates[i]);
-
 	 uList = $( '#timeList' ).val();
 	 updates[0] = $( '#lastUpdate' ).value = updates[0];
 
-	 $( '#caseID' ).closet('form').find('input [type=text], textarea').val('');
 
 	}
 

@@ -9,160 +9,163 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 ------------------------------------------------------------------ */
 
 body {
-   font-family: "Segoe UI";
-   max-width: 1200px;
-   min-width: 500px;
-   height: auto;
-   margin: 20px auto;
+	 font-family: "Segoe UI";
+	 max-width: 1200px;
+	 min-width: 500px;
+	 height: auto;
+	 margin: 20px auto;
 }
 
 h1, h2, h3 {
-   font-weight: 200;
+	 font-weight: 200;
 }
 h1 {
-   font-size: 3.0em;
+	 font-size: 3.0em;
 }
 
 h2 {
-   font-size: 2.5em;
+	 font-size: 2.5em;
 }
 
-h3 {
-   font-size: 1.2em;
-   font-weight: 400;
-   text-align: left;
+.labels {
+	font-size: 2em;
+	font-weight: 300;
+	text-align: left;
+	margin-bottom: 19px;
+	float: left;
+	width: 40%;
+	padding-top: 5px;
+	clear: left;
+}
+
+div#formWrapper {
+		padding: 20px 100px;
+		width: 100%;
+		min-width: 960px;
+}
+
+div.boxTitle {
+	font-weight: 200;
+		font-size: 2.5em;
+		border-bottom: 1px solid #01579b;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
 }
 
 form {
-   min-width: 800px;
-   height: 800px;
-   border: 2px solid #AAA;
-   padding: 30px;
-   -webkit-border-radius: 10px;
-         -moz-border-radius: 10px;
-                   border-radius: 10px;
+	 min-width: 800px;
+	 height: 950px;
+	 border: 2px solid #AAA;
+	 padding: 30px;
+	 -webkit-border-radius: 10px;
+	 -moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 header {
-   width: 100%;
-   margin: 0 auto;
-   margin-bottom: 50px;
-   height: auto;
-   color: #fff;
-   background-color: #01579b;
-   border: 2px solid #424242;
-   -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-                border-radius: 10px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	height: auto;
+	color: #fff;
+	background-color: #01579b;
+	border: 2px solid #424242;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+li {
+	font-size: 1.2em;
+	list-style: none;
 }
 
 #logo {
-   width: 100%;
-   height: 100px;
-   overflow: hidden;
+	 width: 100%;
+	 height: 100px;
+	 overflow: hidden;
 }
 
 #logo h1 {
-   margin: 0 auto;
-   font-size: 4.0em;
-   padding: 10px 0;
-   text-align: center;
+	 margin: 0 auto;
+	 font-size: 4.0em;
+	 padding: 10px 0;
+	 text-align: center;
 }
 
 .caseWrapper {
-   clear: left;
-   float: left;
-   width: 50%;
-   margin: 10px 10px 30px 10px ;
-   padding-bottom: 10px;
-   text-align: left;
+	 clear: left;
+	 float: left;
+	 width: 50%;
+	 margin: 10px 10px 30px 10px ;
+	 padding-bottom: 10px;
+	 text-align: left;
 }
 
 .caseWrapper h2,
 #caseHistory h2 {
-   border-bottom: 1px solid #01579b;
-   margin-bottom: 20px;
-   padding-bottom: 10px;
+	 border-bottom: 1px solid #01579b;
+	 margin-bottom: 20px;
+	 padding-bottom: 10px;
 }
 
 #caseHistory {
-   float: right;
-   width: 40%;
-   margin: 10px 10px 30px 10px ;
-   padding-bottom: 10px;
-   text-align: left;
+	 float: right;
+	 width: 40%;
+	 margin: 10px 10px 30px 10px ;
+	 padding-bottom: 10px;
+	 text-align: left;
 }
 
-#caseID {
-    width: 99%;
-    height: 30px;
+.boxCase {
+	padding-top: 20px;
+}
+
+.dataWrapper {
+	border: 1px solid rgb(169, 169, 169);
+	float: right;
+	height: 20px;
+	margin-bottom: 10px;
+	width: 50%;
+	font-size: 1.2em;
+	font-weight: 200;
+	padding: .7em;
 }
 
 #caseNotes {
-   width: 98%;
-   height: 190px;
+	float: left;
+	clear: both;
+	height: 185px;
+	width: 95%;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 
-table {
-    width: 100%;
-}
-
-tbody {
-    width: 98%;
-    min-width: 250px;
-}
-
-th, td {
-   vertical-align: top;
-}
-
-th {
-    text-align: left;
-    vertical-align: middle;
-    padding-bottom: 5px;
-    width: 160px;
-    margin-right: 10px;
-}
-
-th h3 {
-    padding-top: 5px;
-    margin-top: 5px;
-}
-
-tr {
-    width: 100%;
-    height: 30px;
-}
-
-td.dataWrapper {
-   border: 1px solid rgb(169, 169, 169);
-   width: 70%;
-   vertical-align: middle;
-   text-align: left;
-}
-
-textarea#timeList {
-   width: 98%;
-   height: 450px;
+#timeList {
+	 width: 100%;
+	 height: 585px;
+	 border: 1px solid rgb(169, 169, 169);
+	padding: 10px 2px;
 }
 
 #addUpdate,
 #delUpdate {
-    margin: 50px 30px 0 0;
-    width: 200px;
-    height: 50px;
-    border: none;
-    color: #fff;
-    font-size: 2.0em;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 0;
+	margin: 40px 30px 0 0;
+	width: 190px;
+	height: 50px;
+	border: none;
+	color: #fff;
+	font-size: 2.0em;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 0;
+	float: left;
 }
 
 #addUpdate {
-       background-color: #4caf50;
+	background-color: #4caf50;
 }
 
 #delUpdate {
-    background-color: #E91E63;
+	background-color: #E91E63;
 }
